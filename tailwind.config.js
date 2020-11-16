@@ -1,11 +1,18 @@
 module.exports = {
   purge: [],
   theme: {
-    fontFamily: {
-      plex: ["IBM Plex Sans"],
+    extend: {
+      screens: {
+        xsm: "400px",
+      },
+      fontFamily: {
+        plex: ["IBM Plex Sans"],
+      },
     },
-    extend: {},
   },
-  variants: {},
+  variants: {
+    display: ['responsive', 'hover', 'focus'],
+  },
   plugins: [],
 };
+

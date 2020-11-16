@@ -4,9 +4,10 @@
 
 @tailwind components;
 
-.test {
-    background-color: pink
+.hide {
+    display: none;
 }
+
 
 @tailwind utilities;
 
