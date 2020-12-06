@@ -8,7 +8,6 @@ import {
 
 import Blog from "./pages/blog/blog";
 import "./styles/app.css";
-import "./styles/sassy.scss";
 
 function App() {
   return (

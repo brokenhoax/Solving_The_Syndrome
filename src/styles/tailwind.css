@@ -8,9 +8,4 @@
   display: none;
 }
 
-.blog h1 {
-  width: "100%";
-  color: $text-color;
-}
-
 @tailwind utilities;

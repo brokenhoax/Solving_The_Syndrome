@@ -48,7 +48,7 @@ function Navbar() {
             <FontAwesomeIcon icon={faTimes} size="2x" />
           </button>
         </div>
-        <ul className="flex flex-col items-end font-plex font-semibold p-4 bg-gray-900">
+        <ul className="flex justify-end font-plex font-semibold p-4 bg-gray-900">
           {navLinks.map((link, index) => (
             <li className="p-2" key={index}>
               <Link to={link.path}>{link.title}</Link>

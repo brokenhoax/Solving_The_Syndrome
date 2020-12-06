@@ -13,7 +13,7 @@ export default [
     date: moment().format("MMMM DD, YYYY"),
     categories: ["React", "JavaScript"],
     link: "#",
-    image: "graphql.png",
+    image: "graph.jpg",
   },
   {
     title: "Popular Programming Languages in 2020",
