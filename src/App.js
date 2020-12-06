@@ -6,8 +6,9 @@ import {
   Redirect,
 } from "react-router-dom";
 
-import Blog from "./components/blog/Blog";
+import Blog from "./pages/blog/blog";
 import "./styles/app.css";
+import "./styles/sassy.scss";
 
 function App() {
   return (
