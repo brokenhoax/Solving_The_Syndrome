@@ -4,6 +4,7 @@ import { categoryColors } from "./styles";
 
 const MasonryPost = ({ post, tagsOntop }) => {
   const imageBackground = {
+    overflow: `hidden`,
     backgroundImage: `url("${
       require(`../../assets/images/${post.image}`).default
     }")`,
@@ -12,21 +13,27 @@ const MasonryPost = ({ post, tagsOntop }) => {
   const style = { ...imageBackground, ...post.style };
 
   return (
-    <a className="masonry-post overlay" style={style} href={post.link}>
-      <div className="flex flex-col image-text h-full w-full p-1 border-box">
-        <div className="tags-container">
+    <a
+      className="masonry-post overlay rounded bg-clip-padding overflow-hidden"
+      style={style}
+      href={post.link}
+    >
+      <div className="image-text">
+        <h2 className="image-title p-2 bg-gray-900 font-semibold">
+          {post.title}
+        </h2>
+        <div className="p-1">
           {post.categories.map((tag, index) => (
             <span
               key={index}
-              className="tag"
+              className="tag p-1 text-xs font-medium m-1 rounded"
               style={{ backgroundColor: categoryColors[tag] }}
             >
               {tag.toUpperCase()}
             </span>
           ))}
         </div>
-        <h2 className="image-title pl-2 w-full bg-gray-900">{post.title}</h2>
-        <span className="image-date pl-2">{post.date}</span>
+        <span className="image-date pl-2 text-white">{post.date}</span>
       </div>
     </a>
   );

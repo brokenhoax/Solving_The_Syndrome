@@ -1,7 +1,6 @@
 @import "./blog.scss";
 
 html body {
-  font-weight: 500;
   background-color: $background;
 }
 
@@ -33,4 +32,14 @@ h1 {
     rgba(0, 0, 0, 0.8) 99%,
     rgba(0, 0, 0, 0.8) 100%
   );
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr 2fr;
+  grid-template-areas:
+    "navbar"
+    "featured"
+    "trending";
 }

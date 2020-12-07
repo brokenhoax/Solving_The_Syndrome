@@ -4,8 +4,4 @@
 
 @tailwind components;
 
-.hide {
-  display: none;
-}
-
 @tailwind utilities;

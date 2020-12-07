@@ -8,7 +8,7 @@ const PostMasonry = ({ posts, columns, tagsOnTop }) => {
   };
 
   return (
-    <section style={style} className="masonry flex flex-wrap justify-center ">
+    <section className="masonry">
       {posts.map((post, index) => (
         <MasonryPost {...{ post, index, tagsOnTop, key: index }} />
       ))}

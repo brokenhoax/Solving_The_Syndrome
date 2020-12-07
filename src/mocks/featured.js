@@ -13,7 +13,7 @@ export default [
     date: moment().format("MMMM DD, YYYY"),
     categories: ["React", "JavaScript"],
     link: "#",
-    image: "graph.png",
+    image: "graph.jpg",
   },
   {
     title: "A Day in the Life of a Programmer",
@@ -31,6 +31,13 @@ export default [
   },
   {
     title: "Eat, Sleep, Code, Repeat?",
+    date: moment().format("MMMM DD, YYYY"),
+    categories: ["Tech Culture"],
+    link: "#",
+    image: "tired.jpg",
+  },
+  {
+    title: "Monkey See Monkey Do?",
     date: moment().format("MMMM DD, YYYY"),
     categories: ["Tech Culture"],
     link: "#",

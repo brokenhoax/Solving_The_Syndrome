@@ -44,7 +44,7 @@ function Navbar() {
           <div className="font-plex font-bold px-4 md:text-xl lg:text-2xl">
             A Blog About Learning To Code
           </div>
-          <button className="mx-4" onClick={setNavbarstatus}>
+          <button className="mx-4 focus:outline-none" onClick={setNavbarstatus}>
             <FontAwesomeIcon icon={faTimes} size="2x" />
           </button>
         </div>
@@ -67,7 +67,7 @@ function Navbar() {
           <div className="font-plex font-bold px-4 md:text-xl lg:text-2xl">
             A Blog About Learning To Code
           </div>
-          <button className="mx-4" onClick={setNavbarstatus}>
+          <button className="mx-4 focus:outline-none" onClick={setNavbarstatus}>
             <FontAwesomeIcon icon={faMinus} size="2x" />
           </button>
         </div>

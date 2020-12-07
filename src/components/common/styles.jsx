@@ -4,7 +4,7 @@ const categoryColors = {
   "Personal Betterment": "rgb(255,45,85)",
   Vue: "rgb(62,199,89)",
   React: "rgb(64,156,255)",
-  Javascript: "rgb(255,179,64)",
+  JavaScript: "rgb(255,179,64)",
   Cloud: "rgb(175,82,250",
 };
 

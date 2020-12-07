@@ -7,14 +7,15 @@ import {
 } from "react-router-dom";
 
 import Blog from "./pages/blog/blog";
+import "./styles/scss/base.scss";
 import "./styles/app.css";
 
 function App() {
   return (
     <Router>
-      <div className="h-screen bg-gray-800 text-gray-400">
-        <Navbar />
-        <Blog />
+      <div className="wrapper h-screen text-gray-400">
+        <Navbar className="navbar" />
+        <Blog className="blog" />
       </div>
     </Router>
   );
