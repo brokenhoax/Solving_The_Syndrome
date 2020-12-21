@@ -1,6 +1,6 @@
 import moment from "moment";
 
-export default [
+export let featured = [
   {
     title: "Software Engineer Salary in 2020",
     date: moment().format("MMMM DD, YYYY"),

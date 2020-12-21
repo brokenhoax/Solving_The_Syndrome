@@ -1,10 +1,5 @@
 import Navbar from "./components/navbar/Navbar";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import Blog from "./pages/blog/blog";
 import "./styles/scss/base.scss";

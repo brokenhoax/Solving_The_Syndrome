@@ -8,7 +8,7 @@ const PostMasonry = ({ posts, columns, tagsOnTop }) => {
   };
 
   return (
-    <section className="masonry">
+    <section className="mt-4 masonry" style={style}>
       {posts.map((post, index) => (
         <MasonryPost {...{ post, index, tagsOnTop, key: index }} />
       ))}

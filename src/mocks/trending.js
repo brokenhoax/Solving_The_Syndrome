@@ -1,6 +1,6 @@
 import moment from "moment";
 
-export default [
+export let trending = [
   {
     title: "Can Anyone Code?",
     date: moment().format("MMMM DD, YYYY"),

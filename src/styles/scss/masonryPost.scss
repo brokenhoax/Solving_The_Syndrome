@@ -1,11 +1,10 @@
 .masonry-post {
   position: relative;
-  overflow: none;
+  overflow: hidden;
+  min-height: 300px;
   text-decoration: none;
   background-size: cover;
   background-position: center-center;
-
-  background-clip: border-box;
 }
 
 .masonry-post:nth-child(1) {
@@ -22,11 +21,18 @@
   grid-column: span 1;
   grid-row: span 20;
 }
+
 .masonry-post:nth-child(4) {
   grid-column: span 2;
   grid-row: span 20;
 }
+
 .masonry-post:nth-child(5) {
+  grid-column: span 3;
+  grid-row: span 20;
+}
+
+.masonry-post:nth-child(6) {
   grid-column: span 3;
   grid-row: span 20;
 }

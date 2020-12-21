@@ -1,7 +1,7 @@
 @import "./blog.scss";
 
 html body {
-  background-color: $background;
+  background-color: $thm-dark-blue;
 }
 
 h1 {
@@ -34,12 +34,36 @@ h1 {
   );
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 2fr 1fr 2fr;
-  grid-template-areas:
-    "navbar"
-    "featured"
-    "trending";
+.navDown {
+  position: relative;
+  animation-name: navDown;
+  animation-duration: 300ms;
+  z-index: -1;
+}
+
+@keyframes navDown {
+  0% {
+    top: -30px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+.navUp {
+  position: relative;
+  animation-name: navUp;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+  z-index: -1;
+}
+
+@keyframes navUp {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -30px;
+  }
 }
