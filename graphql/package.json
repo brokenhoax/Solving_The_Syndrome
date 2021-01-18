@@ -1,0 +1,32 @@
+{
+  "name": "react-blog-backend",
+  "version": "1.0.0",
+  "description": "A Koa and GraphQL backend for React Blog",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "create-migration": "node ./database/migrations/create-migration.js",
+    "run-migration": "node ./database/actions/run-migration.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brokenhoax/Solving_The_Syndrome.git"
+  },
+  "author": "Andrew Kraus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brokenhoax/Solving_The_Syndrome/issues"
+  },
+  "homepage": "https://github.com/brokenhoax/Solving_The_Syndrome#readme",
+  "dependencies": {
+    "apollo-server-koa": "^2.19.0",
+    "bluebird": "^3.7.2",
+    "dotenv": "^8.2.0",
+    "graphql-tools": "^7.0.2",
+    "knex": "^0.21.14",
+    "koa": "^2.13.0",
+    "moment": "^2.29.1",
+    "mysql2": "^2.2.5",
+    "path": "^0.12.7"
+  }
+}
