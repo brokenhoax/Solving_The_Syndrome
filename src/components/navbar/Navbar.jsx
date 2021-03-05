@@ -58,7 +58,7 @@ function Navbar() {
         </div>
         <ul className="flex justify-end font-plex font-semibold pb-2 pr-2 bg-gray-900 navDown">
           {navLinks.map((link, index) => (
-            <li className="pl-6" key={index}>
+            <li className="px-6" key={index}>
               <Link to={link.path}>{link.title}</Link>
             </li>
           ))}
@@ -73,7 +73,7 @@ function Navbar() {
         <div className="bg-gray-900 text-gray-400 max-w-full flex items-center justify-between z-20">
           <img className="h-8 m-4" src={logo} alt="Logo"></img>
           <div className="font-plex font-bold px-4 md:text-xl lg:text-2xl">
-            A Blog About Learning To Code
+            Solving the Syndrome
           </div>
           <div className="w-16">
             {" "}
@@ -87,7 +87,7 @@ function Navbar() {
         </div>
         <ul className="flex justify-end font-plex font-semibold pb-2 pr-2 bg-gray-900 navUp">
           {navLinks.map((link, index) => (
-            <li className="pl-6" key={index}>
+            <li className="px-6" key={index}>
               <Link to={link.path}>{link.title}</Link>
             </li>
           ))}
