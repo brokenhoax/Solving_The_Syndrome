@@ -1,75 +1,12 @@
 import React from "react";
-import { featured } from "../../mocks/featured";
-import { trending } from "../../mocks/trending";
-import { PostMasonry, MasonryPost, PostGrid } from "../../components/common";
-import "../../styles/app.css";
 import "../../styles/scss/blog.scss";
 
-const trendingConfig = {
-  0: {
-    gridArea: "1 / 1/ 2 / 3",
-    height: "300px",
-  },
-  1: {
-    height: "300px",
-  },
-  3: {
-    height: "630px",
-    marginLeft: "30px",
-    width: "630px",
-  },
-};
-
-const featuredConfig = {
-  0: {
-    gridArea: "1 / 1/ 2 / 3",
-    height: "300px",
-  },
-  1: {
-    height: "300px",
-  },
-  3: {
-    height: "630px",
-    marginLeft: "30px",
-    width: "630px",
-  },
-};
-
-const mergeStyles = function (posts, config) {
-  posts.forEach((post, index) => {
-    // post.style = config[index];
-    post.author = "Andrew Kraus";
-    post.description = "Lorem ipsum dolar sit amet, consecetur etc. etc. etc.";
-    console.log(post);
-  });
-};
-
-const recentPosts = [...trending, ...featured, ...featured];
-
-mergeStyles(featured, featuredConfig);
-mergeStyles(trending, trendingConfig);
-
-// const lastPost = featured.pop()
-const lastFeatured = featured.pop();
-
-export default function Blog() {
+const Blog = () => {
   return (
-    <main>
-      <section className="container font-plex">
-        <div>
-          <section className="flex flex-col mt-8">
-            <MasonryPost post={lastFeatured} tagsOnTop={true} columns={3} />
-            <PostMasonry posts={featured} tagsOnTop={true} columns={3} />
-          </section>
-        </div>
-      </section>
-      <section className="container font-plex">
-        <div>
-          <section className=" ">
-            <PostGrid posts={recentPosts} />
-          </section>
-        </div>
-      </section>
-    </main>
+    <section className="flex flex-col pt-24">
+      <h1 class="mx-1/2 text-center">Welcome to the jungle!</h1>
+    </section>
   );
-}
+};
+
+export default Blog;
