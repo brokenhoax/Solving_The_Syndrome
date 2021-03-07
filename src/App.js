@@ -2,7 +2,12 @@ import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/blog/home";
 import Blog from "./pages/blog/blog";
 import Login from "./pages/login";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  HashRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import "./styles/scss/base.scss";
 import "./styles/app.css";
 
@@ -21,6 +26,7 @@ function App() {
             className="login"
             component={Login}
           />
+          <Redirect from="*" to="/404" />
         </Switch>
       </div>
     </Router>
