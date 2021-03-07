@@ -19,12 +19,12 @@
   },
   "homepage": "https://github.com/brokenhoax/Solving_The_Syndrome#readme",
   "dependencies": {
-    "apollo-server-koa": "^2.19.0",
+    "apollo-server-koa": "^2.21.0",
     "bluebird": "^3.7.2",
     "dotenv": "^8.2.0",
-    "graphql-tools": "^7.0.2",
-    "knex": "^0.21.14",
-    "koa": "^2.13.0",
+    "graphql-tools": "^7.0.4",
+    "knex": "^0.21.19",
+    "koa": "^2.13.1",
     "moment": "^2.29.1",
     "mysql2": "^2.2.5",
     "path": "^0.12.7"

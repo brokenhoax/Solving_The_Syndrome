@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/scss/blog.scss";
 import "../../styles/app.css";
+import gridz from "../../assets/images/grid.jpg";
 
 const Blog = () => {
   return (
@@ -8,7 +9,7 @@ const Blog = () => {
       <div className="flex flex-col justify-center mt-8 w-1/2">
         <h1 className="text-4xl font-bold mt-24 mb-2">I Know Kung Foo</h1>
         <h2 className="italic text-red-500">March 5th, 2021</h2>
-        <p class="text-2xl my-8">
+        <p className="text-2xl my-8">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
           aperiam unde laboriosam cumque neque officiis esse fugit, sit totam
           asperiores, animi molestias cum, nam voluptatibus nisi inventore eum
@@ -20,14 +21,14 @@ const Blog = () => {
           dolore laboriosam, iure autem deleniti dolor vitae. Ab nam hic
           accusantium minima ipsam natus voluptas aperiam.
         </p>
-        <div class="flex justify-center items-center min-w-full">
+        <div className="flex justify-center items-center min-w-full">
           <img
+            src={gridz}
+            alt="Picture of Application"
             class="flex justify-center items-center w-1/2 rounded-md"
-            src="/images/grid.jpg"
-            alt="Image of Code"
           ></img>
         </div>
-        <p class="text-2xl my-8">
+        <p className="text-2xl my-8">
           Aperiam reiciendis odit voluptate sit aspernatur ullam repellat iure,
           modi necessitatibus odio blanditiis inventore repudiandae consequatur
           magni qui vitae quas excepturi reprehenderit itaque corrupti dolorem
@@ -41,7 +42,7 @@ const Blog = () => {
           illum culpa dolores mollitia debitis dolor deleniti maiores quasi quo
           sit a!
         </p>
-        <p class="text-2xl my-8">
+        <p className="text-2xl my-8">
           Consequatur impedit molestiae explicabo itaque, dolorum modi
           voluptatem saepe voluptas accusantium voluptatibus obcaecati mollitia
           aliquam ratione dignissimos fugiat. Ut, voluptatem molestiae corrupti
