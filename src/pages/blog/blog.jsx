@@ -20,7 +20,7 @@ const Blog = () => {
         <div className="flex justify-center items-center min-w-full">
           <img
             src={kungfoo}
-            alt="Picture of Application"
+            alt="Application"
             className="flex justify-center items-center w-2/3 rounded-md"
           ></img>
         </div>
@@ -34,7 +34,7 @@ const Blog = () => {
         <p className="text-2xl my-4 leading-10">
           Fast-forward to 2021 and,{" "}
           <a href="https://www.w3schools.com" class="text-red-400">
-            thanks to visionaries like Elon Musk
+            thanks to visionaries like ELON MUSK
           </a>
           , we're getting closer to making that a reality. Unfortunately, at 36,
           the once alluring prospect of being able to become a master of
