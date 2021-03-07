@@ -22,7 +22,7 @@ const Blog = () => {
         </p>
         <div class="flex justify-center items-center min-w-full">
           <img
-            class="flex justify-center items-center w-1/2"
+            class="flex justify-center items-center w-1/2 rounded-md"
             src="/images/grid.jpg"
             alt="Image of Code"
           ></img>
