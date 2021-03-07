@@ -6,12 +6,12 @@ import kungfoo from "../../assets/images/kung-foo.jpg";
 const Blog = () => {
   return (
     <section className="flex flex-col justify-center items-center mt-8">
-      <div className="flex flex-col justify-center w-1/2">
+      <div className="flex flex-col justify-center w-1/3">
         <h1 className="text-4xl font-bold mt-24 mb-2">I Know Kung Foo</h1>
         <h2 className="italic text-red-400">March 5th, 2021</h2>
         <p className="text-2xl my-4 leading-10">
           One of my favorite scenes from one of my favorite movies, The Matix,
-          is when the protagonist, Neo, is "learning" self-defense by having it
+          is when the protagonist, Neo, is learning self-defense by having it
           downloaded into his consciousness. After a ten-hour download binge,
           Neo awakes, looks at his mentor, Morpheous, and says "I know Kung Fu".
           Morpheous, without cracking a smile at the absurdity of it all, leans
