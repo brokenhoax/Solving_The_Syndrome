@@ -43,7 +43,7 @@ const Blog = () => {
           sit a!
         </p>
         <p className="text-2xl my-8">
-          Consequatur impedit molestiae explicabo itaque, dolorum modi
+          Consequature impedit molestiae explicabo itaque, dolorum modi
           voluptatem saepe voluptas accusantium voluptatibus obcaecati mollitia
           aliquam ratione dignissimos fugiat. Ut, voluptatem molestiae corrupti
           mollitia, nihil cupiditate porro fugit eaque sunt id iure nobis
