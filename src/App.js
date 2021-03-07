@@ -12,10 +12,15 @@ function App() {
       <div className="wrapper h-screen text-gray-400">
         <Navbar className="navbar" />
         <Switch>
-          <Route path="/" exact={true} comonent={Home} />
-          <Home path="/home" className="home" component={Home} />
-          <Blog path="/blog" className="blog" component={Blog} />
-          <Login path="/login" className="login" component={Login} />
+          <Route path="/" exact={true} component={Home} />
+          <Route path="/home" exact={true} className="home" component={Home} />
+          <Route path="/blog" exact={true} className="blog" component={Blog} />
+          <Route
+            path="/login"
+            exact={true}
+            className="login"
+            component={Login}
+          />
         </Switch>
       </div>
     </Router>

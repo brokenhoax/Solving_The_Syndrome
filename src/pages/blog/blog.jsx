@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../../styles/scss/blog.scss";
 import "../../styles/app.css";
 import kungfoo from "../../assets/images/kung-foo.jpg";
@@ -44,7 +44,7 @@ const Blog = () => {
           achieve the same just makes me want to puke.
         </p>
         <p className="text-2xl my-4">How I benefit from this blog.</p>
-        <pre className="text-sm self-center prettyprint bg-gray-900 w-2/3 leading-8 rounded-xl lang-js overflow-auto ">
+        <pre className="text-lg self-center prettyprint bg-gray-900 w-2/3 leading-10 rounded-xl lang-js overflow-auto ">
           {`
     function test() {
         let i = 0;
