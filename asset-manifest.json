@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Solving_The_Syndrome/static/css/main.2455243e.chunk.css",
-    "main.js": "/Solving_The_Syndrome/static/js/main.2abbfd25.chunk.js",
-    "main.js.map": "/Solving_The_Syndrome/static/js/main.2abbfd25.chunk.js.map",
-    "runtime-main.js": "/Solving_The_Syndrome/static/js/runtime-main.60690d6e.js",
-    "runtime-main.js.map": "/Solving_The_Syndrome/static/js/runtime-main.60690d6e.js.map",
-    "static/js/2.c2d322f8.chunk.js": "/Solving_The_Syndrome/static/js/2.c2d322f8.chunk.js",
-    "static/js/2.c2d322f8.chunk.js.map": "/Solving_The_Syndrome/static/js/2.c2d322f8.chunk.js.map",
-    "static/js/3.1be88da3.chunk.js": "/Solving_The_Syndrome/static/js/3.1be88da3.chunk.js",
-    "static/js/3.1be88da3.chunk.js.map": "/Solving_The_Syndrome/static/js/3.1be88da3.chunk.js.map",
+    "main.js": "/Solving_The_Syndrome/static/js/main.7bee9c1c.chunk.js",
+    "main.js.map": "/Solving_The_Syndrome/static/js/main.7bee9c1c.chunk.js.map",
+    "runtime-main.js": "/Solving_The_Syndrome/static/js/runtime-main.e20ad20b.js",
+    "runtime-main.js.map": "/Solving_The_Syndrome/static/js/runtime-main.e20ad20b.js.map",
+    "static/js/2.43ce2ff6.chunk.js": "/Solving_The_Syndrome/static/js/2.43ce2ff6.chunk.js",
+    "static/js/2.43ce2ff6.chunk.js.map": "/Solving_The_Syndrome/static/js/2.43ce2ff6.chunk.js.map",
+    "static/js/3.ae2415ab.chunk.js": "/Solving_The_Syndrome/static/js/3.ae2415ab.chunk.js",
+    "static/js/3.ae2415ab.chunk.js.map": "/Solving_The_Syndrome/static/js/3.ae2415ab.chunk.js.map",
     "index.html": "/Solving_The_Syndrome/index.html",
     "static/css/main.2455243e.chunk.css.map": "/Solving_The_Syndrome/static/css/main.2455243e.chunk.css.map",
-    "static/js/2.c2d322f8.chunk.js.LICENSE.txt": "/Solving_The_Syndrome/static/js/2.c2d322f8.chunk.js.LICENSE.txt",
+    "static/js/2.43ce2ff6.chunk.js.LICENSE.txt": "/Solving_The_Syndrome/static/js/2.43ce2ff6.chunk.js.LICENSE.txt",
     "static/media/banana.jpg": "/Solving_The_Syndrome/static/media/banana.77ff416c.jpg",
     "static/media/cbgapi.loaded_0": "/Solving_The_Syndrome/static/media/cbgapi.7463d418.loaded_0",
     "static/media/code.jpg": "/Solving_The_Syndrome/static/media/code.b071a8a1.jpg",
@@ -30,9 +30,9 @@
     "static/media/tired.jpg": "/Solving_The_Syndrome/static/media/tired.1a9b062b.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.60690d6e.js",
-    "static/js/2.c2d322f8.chunk.js",
+    "static/js/runtime-main.e20ad20b.js",
+    "static/js/2.43ce2ff6.chunk.js",
     "static/css/main.2455243e.chunk.css",
-    "static/js/main.2abbfd25.chunk.js"
+    "static/js/main.7bee9c1c.chunk.js"
   ]
 }
