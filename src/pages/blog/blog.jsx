@@ -4,12 +4,19 @@ import "../../styles/app.css";
 import kungfoo from "../../assets/images/kung-foo.jpg";
 
 const Blog = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src =
+      "https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=js&amp;skin=desert";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
   return (
-    <section className="flex flex-col justify-center items-center mt-8">
-      <div className="flex flex-col justify-center w-1/3">
+    <section className="flex flex-col justify-center items-center mt-16">
+      <div className="flex flex-col justify-center w-2/5">
         <h1 className="text-4xl font-bold mt-24 mb-2">I Know Kung Foo</h1>
         <h2 className="italic text-red-400">March 5th, 2021</h2>
-        <p className="text-2xl my-4 leading-10">
+        <p className="text-2xl my-4 leading-10 mt-12">
           One of my favorite scenes from one of my favorite movies, The Matix,
           is when the protagonist, Neo, is learning self-defense by having it
           downloaded into his consciousness. After a ten-hour download binge,
@@ -33,8 +40,8 @@ const Blog = () => {
         </p>
         <p className="text-2xl my-4 leading-10">
           Fast-forward to 2021 and,{" "}
-          <a href="https://www.w3schools.com" class="text-red-400">
-            thanks to visionaries like ELON MUSK
+          <a href="https://neuralink.com/" class="text-red-400">
+            thanks to visionaries like Elon Musk
           </a>
           , we're getting closer to making that a reality. Unfortunately, at 36,
           the once alluring prospect of being able to become a master of
@@ -44,7 +51,7 @@ const Blog = () => {
           achieve the same just makes me want to puke.
         </p>
         <p className="text-2xl my-4">How I benefit from this blog.</p>
-        <pre className="text-lg self-center prettyprint bg-gray-900 w-2/3 leading-10 rounded-xl lang-js overflow-auto ">
+        <pre className="text-lg self-center prettyprint text-red-400 bg-gray-900 w-2/3 leading-10 rounded-xl overflow-auto">
           {`
     function test() {
         let i = 0;
