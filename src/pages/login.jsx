@@ -20,22 +20,39 @@ const Login = () => {
           <div>Welcome!</div>
         ) : (
           <>
-            <div>
-              <div>
-                <h2>Log In</h2>
-                <form>
-                  <label htmlFor="login-email">Email</label>
+            <div className="flex justify-center items-center w-full">
+              <div className="w-1/6">
+                <form className="flex flex-col">
+                  <label
+                    htmlFor="login-username"
+                    className="mb-2 text-lg font-semibold"
+                  >
+                    Username
+                  </label>
                   <input
-                    type="email"
+                    type="text"
                     onChange={(e) => setEmail(e.target.value)}
+                    className="rounded-lg text-base h-8 p-5 text-gray-900 bg-gray-400 font-semibold"
                   />
-                  <label htmlFor="login-email">Password</label>
+                  <label
+                    htmlFor="login-password"
+                    className="mt-4 mb-2 text-lg font-semibold"
+                  >
+                    Password
+                  </label>
                   <input
                     id="login-password"
                     type="password"
+                    className="rounded-lg text-base h-8 p-5 text-gray-900 bg-gray-400 font-semibold"
                     onChange={(e) => setPassword(e.target.value)}
                   />
-                  <input type="submit" value="Submit" />
+                  <button
+                    type="submit"
+                    value="Submit"
+                    className="mt-8 px-4 py-2 bg-gray-900 text-red-400 font-semibold text-xl rounded-lg hover:bg-red-400 hover:text-gray-900 "
+                  >
+                    Log In
+                  </button>
                 </form>
               </div>
             </div>
