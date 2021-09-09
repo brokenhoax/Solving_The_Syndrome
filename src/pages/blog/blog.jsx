@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../../styles/scss/blog.scss";
 import "../../styles/app.css";
+import headshot from "../../assets/headshot.png";
 
 const Blog = () => {
   const posts = [
@@ -12,9 +13,20 @@ const Blog = () => {
         minutes: "5",
         seconds: "00",
       },
-      icon: "fas fa-capsules",
+      icon: "fas fa-mug-hot",
       tagline: "This is my red pill",
       path: "/blog/i-know-kung-foo",
+    },
+    {
+      title: "Clean Code",
+      date: "6-3-2021",
+      length: {
+        minutes: "3",
+        seconds: "00",
+      },
+      icon: "fas fa-mug-hot",
+      tagline: "Whistle while you work.",
+      path: "/blog/clean-code",
     },
   ];
 
@@ -26,30 +38,39 @@ const Blog = () => {
     document.body.appendChild(script);
   }, []);
   return (
-    <section className="flex flex-col items-center mt-8">
-      <ul>
-        {posts.map((post, index) => (
-          <li className="mt-32 border-0" key={index}>
-            <Link
-              to={post.path}
-              className="text-4xl font-semibold text-red-400 hover:text-white"
-            >
-              {post.title}
-            </Link>
-            <div className="leading-7">
-              <div className="flex items-center">
-                <div className="text-lg text-red-400">{post.tagline}</div>
-                <i className={`${post.icon} px-2 text-gray-400`}></i>
-                <p className="text-red-400">{post.length.minutes} Minutes</p>
+    <section className="flex items-center justify-center mt-16">
+      <div className="inline-flex flex-col items-center space-x-4">
+        <div className="inline-flex items-center w-full pb-6 ml-8">
+          <img src={headshot} class="rounded-full h-16" alt="Logo"></img>
+          <div className="ml-4 font-semibold text-base">
+            <div>Andrew Kraus</div>
+            <div className="pb-0.5 text-red-400">@brokenhoax</div>
+          </div>
+        </div>
+        <ul>
+          {posts.map((post, index) => (
+            <li className="border-0 mt-6" key={index}>
+              <Link
+                to={post.path}
+                className="text-4xl font-semibold text-red-400 hover:text-white"
+              >
+                {post.title}
+              </Link>
+              <div className="leading-7">
+                <div className="flex items-center">
+                  <div className="text-lg text-red-400">{post.tagline}</div>
+                  <i className={`${post.icon} px-2 text-gray-400`}></i>
+                  <p className="text-red-400">{post.length.minutes} Minutes</p>
+                </div>
+                <div className="text-sm text-gray-400 font-semibold">
+                  {post.date}
+                </div>
               </div>
-              <div className="text-sm text-gray-400 font-semibold">
-                {post.date}
-              </div>
-            </div>
-          </li>
-        ))}
-        <li></li>
-      </ul>
+            </li>
+          ))}
+          <li></li>
+        </ul>
+      </div>
     </section>
   );
 };

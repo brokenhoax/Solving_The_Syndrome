@@ -40,73 +40,74 @@ function Navbar() {
 
   if (toggle) {
     return (
-      <div className="fixed w-full top-0 z-10">
-        <div className="bg-gray-900 text-gray-400 max-w-full flex items-center justify-between z-20">
-          <img className="h-8 m-4" src={logo} alt="Logo"></img>
-          <div className="font-plex font-bold px-4 md:text-xl lg:text-2xl">
-            A Blog About Learning To Code
-          </div>
-          <div className="w-16">
-            {" "}
-            <button
-              className="mx-4 focus:outline-none border-opacity-0 border-b-2 border-transparent hover:border-opacity-100 hover:border-b-2 hover:border-red-400"
-              onClick={setNavbarstatus}
-            >
-              <FontAwesomeIcon icon={faTimes} size="lg" />
-            </button>
+      <div className="flex justify-center  text-gray-400 z-20">
+        <div className="fixed w-full bg-gray-900">
+          <div className="flex justify-center items-center bg-gray-900">
+            <div className="w-1/3">
+              <img className="h-8 m-4" src={logo} alt="Logo"></img>
+            </div>
+            <div className="w-1/3 text-center font-bold px-4 md:text-xl lg:text-2xl">
+              A Blog About Coding
+            </div>
+            <div class="w-1/3 flex justify-end items-stretch">
+              {setNavvy && (
+                <ul className="flex font-semibold bg-gray-900">
+                  {navLinks.map((link, index) => (
+                    <li className="px-6 my-auto" key={index}>
+                      {setNavvy == link.path && (
+                        <Link
+                          to={link.path}
+                          class="h-full focus:outline-none border-b-2 border-transparent border-opacity-100 border-red-400"
+                        >
+                          {link.title}
+                        </Link>
+                      )}
+                      {setNavvy != link.path && (
+                        <Link
+                          to={link.path}
+                          class="focus:outline-none border-opacity-0 border-b-2 border-transparent hover:border-opacity-100 hover:border-b-2 hover:border-red-400 focus:border-red-400 focus:border-opacity-100 focus:border-b-2 active:border-opacity-100 active:border-b-2 active:border-red-400"
+                        >
+                          {link.title}
+                        </Link>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              )}
+              <button
+                className="mx-4 focus:outline-none"
+                onClick={setNavbarstatus}
+              >
+                <FontAwesomeIcon icon={faTimes} size="lg" />
+              </button>
+            </div>
           </div>
         </div>
-        <ul className="flex justify-end font-plex font-semibold pb-2 pr-2 bg-gray-900 navDown">
-          {navLinks.map((link, index) => (
-            <li className="px-6 p" key={index}>
-              {setNavvy == link.path && (
-                <Link
-                  to={link.path}
-                  class="focus:outline-none border-b-2 border-transparent border-opacity-100 border-red-400"
-                >
-                  {link.title}
-                </Link>
-              )}
-              {setNavvy != link.path && (
-                <Link
-                  to={link.path}
-                  class="focus:outline-none border-opacity-0 border-b-2 border-transparent hover:border-opacity-100 hover:border-b-2 hover:border-red-400 focus:border-red-400 focus:border-opacity-100 focus:border-b-2"
-                >
-                  {link.title}
-                </Link>
-              )}
-            </li>
-          ))}
-        </ul>
       </div>
     );
   }
 
   if (!toggle) {
     return (
-      <div className="fixed w-full top-0 z-10">
-        <div className="bg-gray-900 text-gray-400 max-w-full flex items-center justify-between z-20">
-          <img className="h-8 m-4" src={logo} alt="Logo"></img>
-          <div className="font-plex font-bold px-4 md:text-xl lg:text-2xl">
-            Solving the Syndrome
-          </div>
-          <div className="w-16">
-            {" "}
-            <button
-              className="mx-4 focus:outline-none"
-              onClick={setNavbarstatus}
-            >
-              <FontAwesomeIcon icon={faMinus} size="lg" />
-            </button>
+      <div className="flex justify-center  text-gray-400 z-20">
+        <div className="fixed w-full bg-gray-900">
+          <div className="flex justify-center items-center bg-gray-900">
+            <div className="w-1/3">
+              <img className="h-8 m-4" src={logo} alt="Logo"></img>
+            </div>
+            <div className="w-1/3 text-center font-bold px-4 md:text-xl lg:text-2xl">
+              Solving the Syndrome
+            </div>
+            <div class="w-1/3 flex justify-end">
+              <button
+                className="mx-4 focus:outline-none"
+                onClick={setNavbarstatus}
+              >
+                <FontAwesomeIcon icon={faMinus} size="lg" />
+              </button>
+            </div>
           </div>
         </div>
-        <ul className="flex justify-end font-plex font-semibold pb-2 pr-2 bg-gray-900 navUp">
-          {navLinks.map((link, index) => (
-            <li className="px-6" key={index}>
-              <Link to={link.path}>{link.title}</Link>
-            </li>
-          ))}
-        </ul>
       </div>
     );
   }
