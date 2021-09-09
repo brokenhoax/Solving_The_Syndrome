@@ -38,7 +38,7 @@ const Blog = () => {
     document.body.appendChild(script);
   }, []);
   return (
-    <section className="flex items-center justify-center mt-16">
+    <section className="flex items-center justify-center mt-32">
       <div className="inline-flex flex-col items-center space-x-4">
         <div className="inline-flex items-center w-full pb-6 ml-8">
           <img src={headshot} class="rounded-full h-16" alt="Logo"></img>
