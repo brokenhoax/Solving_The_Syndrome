@@ -3,6 +3,7 @@ import Home from "./pages/blog/home";
 import Blog from "./pages/blog/blog";
 import IKnowKungFoo from "./pages/blog/i-know-kung-fu";
 import CleanCode from "./pages/blog/clean-code";
+import Test from "./pages/blog/test";
 import Login from "./pages/login";
 import {
   HashRouter as Router,
@@ -39,6 +40,12 @@ function App() {
             exact={true}
             className="blog"
             component={CleanCode}
+          />
+          <Route
+            path="/blog/test"
+            exact={true}
+            className="blog"
+            component={Test}
           />
           <Redirect from="*" to="/404" />
         </Switch>

@@ -54,7 +54,7 @@ function Navbar() {
                 <ul className="flex font-semibold bg-gray-900">
                   {navLinks.map((link, index) => (
                     <li className="px-6 my-auto" key={index}>
-                      {setNavvy == link.path && (
+                      {setNavvy === link.path && (
                         <Link
                           to={link.path}
                           class="h-full focus:outline-none border-b-2 border-transparent border-opacity-100 border-red-400"
@@ -62,7 +62,7 @@ function Navbar() {
                           {link.title}
                         </Link>
                       )}
-                      {setNavvy != link.path && (
+                      {setNavvy !== link.path && (
                         <Link
                           to={link.path}
                           class="focus:outline-none border-opacity-0 border-b-2 border-transparent hover:border-opacity-100 hover:border-b-2 hover:border-red-400 focus:border-red-400 focus:border-opacity-100 focus:border-b-2 active:border-opacity-100 active:border-b-2 active:border-red-400"
