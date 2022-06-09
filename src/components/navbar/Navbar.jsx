@@ -14,20 +14,20 @@ function Navbar() {
   const navLinks = [
     {
       title: "Home",
-      path: "/home",
+      path: "/blog",
     },
     {
       title: "Contact",
       path: "/contact",
     },
-    {
-      title: "Login",
-      path: "/login",
-    },
-    {
-      title: "Blog",
-      path: "/blog",
-    },
+    // {
+    //   title: "Login",
+    //   path: "/login",
+    // },
+    // {
+    //   title: "Blog",
+    //   path: "/blog",
+    // },
   ];
 
   function setNavbarstatus() {

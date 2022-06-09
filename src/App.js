@@ -1,5 +1,6 @@
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/blog/home";
+import Contact from "./pages/blog/contact";
 import Blog from "./pages/blog/blog";
 import IKnowKungFoo from "./pages/blog/i-know-kung-fu";
 import CleanCode from "./pages/blog/clean-code";
@@ -20,14 +21,14 @@ function App() {
       <div className="wrapper h-screen text-gray-400 font-plex">
         <Navbar className="navbar" />
         <Switch>
-          <Route path="/" exact={true} component={Home} />
+          <Route path="/" exact={true} component={Blog} />
           <Route path="/home" exact={true} className="home" component={Home} />
-          <Route
+          {/* <Route
             path="/login"
             exact={true}
             className="login"
             component={Login}
-          />
+          /> */}
           <Route path="/blog" exact={true} className="blog" component={Blog} />
           <Route
             path="/blog/i-know-kung-foo"
@@ -42,10 +43,10 @@ function App() {
             component={CleanCode}
           />
           <Route
-            path="/blog/test"
+            path="/contact"
             exact={true}
-            className="blog"
-            component={Test}
+            className="contact"
+            component={Contact}
           />
           <Redirect from="*" to="/404" />
         </Switch>
