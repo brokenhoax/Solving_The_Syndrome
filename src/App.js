@@ -38,6 +38,7 @@ function App() {
           />
           <Route
             path="/blog/clean-code"
+            g
             exact={true}
             className="blog"
             component={CleanCode}
