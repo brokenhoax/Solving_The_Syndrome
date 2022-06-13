@@ -14,6 +14,7 @@ import {
 } from "react-router-dom";
 import "./styles/scss/base.scss";
 import "./styles/app.css";
+import ReadySetGo from "./pages/blog/ready-set-go";
 
 function App() {
   return (
@@ -37,11 +38,10 @@ function App() {
             component={IKnowKungFoo}
           />
           <Route
-            path="/blog/clean-code"
-            g
+            path="/blog/ready-set-go"
             exact={true}
             className="blog"
-            component={CleanCode}
+            component={ReadySetGo}
           />
           <Route
             path="/contact"

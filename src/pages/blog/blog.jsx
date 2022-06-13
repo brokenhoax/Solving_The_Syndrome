@@ -18,15 +18,15 @@ const Blog = () => {
       path: "/blog/i-know-kung-foo",
     },
     {
-      title: "Clean Code",
+      title: "Ready Set Go",
       date: "6-3-2021",
       length: {
-        minutes: "3",
+        minutes: "10",
         seconds: "00",
       },
       icon: "fas fa-mug-hot",
-      tagline: "Whistle while you work.",
-      path: "/blog/clean-code",
+      tagline: "You gontta start somewhere.",
+      path: "/blog/ready-set-go",
     },
   ];
 
