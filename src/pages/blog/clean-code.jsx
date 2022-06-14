@@ -14,7 +14,7 @@ const CleanCode = () => {
   return (
     <section className="flex flex-col items-center mt-8">
       <div className="w-1/3">
-        <h1 className="self-center text-4xl font-bold mt-24 mb-2">
+        <h1 className="self-center text-5xl font-bold mt-24 mb-2">
           I Know Kung Foo
         </h1>
         <h2 className="italic text-red-400">March 5th, 2021</h2>

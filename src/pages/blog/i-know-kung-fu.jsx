@@ -12,11 +12,9 @@ const IKnowKungFoo = () => {
     document.body.appendChild(script);
   }, []);
   return (
-    <section className="flex flex-col items-center mt-8">
+    <section className="flex flex-col items-center mt-20">
       <div className="w-1/3">
-        <h1 className="self-center text-4xl font-bold mt-24 mb-2">
-          I Know Kung Foo
-        </h1>
+        <h1 className="self-center text-5xl font-bold mb-2">I Know Kung Foo</h1>
         <h2 className="italic text-red-400">March 5th, 2021</h2>
         <p className="text-xl my-8 leading-10 mt-12">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eum
