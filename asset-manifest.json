@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Solving_The_Syndrome/static/css/main.67607dcf.chunk.css",
-    "main.js": "/Solving_The_Syndrome/static/js/main.f49a18de.chunk.js",
-    "main.js.map": "/Solving_The_Syndrome/static/js/main.f49a18de.chunk.js.map",
-    "runtime-main.js": "/Solving_The_Syndrome/static/js/runtime-main.a52f5653.js",
-    "runtime-main.js.map": "/Solving_The_Syndrome/static/js/runtime-main.a52f5653.js.map",
-    "static/js/2.30466857.chunk.js": "/Solving_The_Syndrome/static/js/2.30466857.chunk.js",
-    "static/js/2.30466857.chunk.js.map": "/Solving_The_Syndrome/static/js/2.30466857.chunk.js.map",
-    "static/js/3.16c85605.chunk.js": "/Solving_The_Syndrome/static/js/3.16c85605.chunk.js",
-    "static/js/3.16c85605.chunk.js.map": "/Solving_The_Syndrome/static/js/3.16c85605.chunk.js.map",
+    "main.js": "/Solving_The_Syndrome/static/js/main.4721a18a.chunk.js",
+    "main.js.map": "/Solving_The_Syndrome/static/js/main.4721a18a.chunk.js.map",
+    "runtime-main.js": "/Solving_The_Syndrome/static/js/runtime-main.54a06f49.js",
+    "runtime-main.js.map": "/Solving_The_Syndrome/static/js/runtime-main.54a06f49.js.map",
+    "static/js/2.7cb323d5.chunk.js": "/Solving_The_Syndrome/static/js/2.7cb323d5.chunk.js",
+    "static/js/2.7cb323d5.chunk.js.map": "/Solving_The_Syndrome/static/js/2.7cb323d5.chunk.js.map",
+    "static/js/3.127cb641.chunk.js": "/Solving_The_Syndrome/static/js/3.127cb641.chunk.js",
+    "static/js/3.127cb641.chunk.js.map": "/Solving_The_Syndrome/static/js/3.127cb641.chunk.js.map",
     "index.html": "/Solving_The_Syndrome/index.html",
     "static/css/main.67607dcf.chunk.css.map": "/Solving_The_Syndrome/static/css/main.67607dcf.chunk.css.map",
-    "static/js/2.30466857.chunk.js.LICENSE.txt": "/Solving_The_Syndrome/static/js/2.30466857.chunk.js.LICENSE.txt",
+    "static/js/2.7cb323d5.chunk.js.LICENSE.txt": "/Solving_The_Syndrome/static/js/2.7cb323d5.chunk.js.LICENSE.txt",
     "static/media/banana.jpg": "/Solving_The_Syndrome/static/media/banana.77ff416c.jpg",
     "static/media/code.jpg": "/Solving_The_Syndrome/static/media/code.b071a8a1.jpg",
     "static/media/graph.jpg": "/Solving_The_Syndrome/static/media/graph.e21dccb6.jpg",
@@ -25,9 +25,9 @@
     "static/media/tired.jpg": "/Solving_The_Syndrome/static/media/tired.1a9b062b.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a52f5653.js",
-    "static/js/2.30466857.chunk.js",
+    "static/js/runtime-main.54a06f49.js",
+    "static/js/2.7cb323d5.chunk.js",
     "static/css/main.67607dcf.chunk.css",
-    "static/js/main.f49a18de.chunk.js"
+    "static/js/main.4721a18a.chunk.js"
   ]
 }
