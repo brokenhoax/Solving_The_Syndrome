@@ -40,7 +40,7 @@ const mergeStyles = function (posts, config) {
     // post.style = config[index];
     post.author = "Andrew Kraus";
     post.description = "Lorem ipsum dolar sit amet, consecetur etc. etc. etc.";
-    console.log(post);
+    // console.log(post);
   });
 };
 

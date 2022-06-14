@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import headshot from "../../assets/headshot.png";
 import "../../styles/scss/blog.scss";
 import "../../styles/app.css";
@@ -7,7 +7,7 @@ const Contact = () => {
   useEffect(() => {
     const script = document.createElement("script");
     script.src =
-      "https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=js&amp;skin=desert";
+      "https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=js&amp;skin=desert";
     script.async = true;
     document.body.appendChild(script);
   }, []);
@@ -58,20 +58,20 @@ const Contact = () => {
           presents itself, I’m all ears.
         </p>
         <div className="inline-flex items-center w-full pb-6">
-          <img src={headshot} class="rounded-full h-16" alt="Logo"></img>
+          <img src={headshot} className="rounded-full h-16" alt="Logo"></img>
           {/* Contact Details */}
           <div className="ml-4 font-semibold text-base">
-            <div class="flex flex-col">
-              <div class="font-bold text-2xl">Andrew Kraus</div>
+            <div className="flex flex-col">
+              <div className="font-bold text-2xl">Andrew Kraus</div>
               <a
                 href="https://www.linkedin.com/in/andrewkraus/"
-                class="hover:text-red-400"
+                className="hover:text-red-400"
               >
                 LinkedIn
               </a>
               <a
                 href="https://github.com/brokenhoax/"
-                class="hover:text-red-400"
+                className="hover:text-red-400"
               >
                 GitHub
               </a>

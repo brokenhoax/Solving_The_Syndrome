@@ -6,7 +6,7 @@ const Test = () => {
   useEffect(() => {
     const script = document.createElement("script");
     script.src =
-      "https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=js&amp;skin=desert";
+      "https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=js&amp;skin=desert";
     script.async = true;
     document.body.appendChild(script);
   }, []);

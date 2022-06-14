@@ -49,7 +49,7 @@ function Navbar() {
             <div className="w-1/3 text-center font-bold px-4 md:text-xl lg:text-2xl">
               A Blog About Coding
             </div>
-            <div class="w-1/3 flex justify-end items-stretch">
+            <div className="w-1/3 flex justify-end items-stretch">
               {setNavvy && (
                 <ul className="flex font-semibold bg-gray-900">
                   {navLinks.map((link, index) => (
@@ -57,7 +57,7 @@ function Navbar() {
                       {setNavvy === link.path && (
                         <Link
                           to={link.path}
-                          class="h-full focus:outline-none border-b-2 border-transparent border-opacity-100 border-red-400"
+                          className="h-full focus:outline-none border-b-2 border-transparent border-opacity-100 border-red-400"
                         >
                           {link.title}
                         </Link>
@@ -65,7 +65,7 @@ function Navbar() {
                       {setNavvy !== link.path && (
                         <Link
                           to={link.path}
-                          class="focus:outline-none border-opacity-0 border-b-2 border-transparent hover:border-opacity-100 hover:border-b-2 hover:border-red-400 focus:border-red-400 focus:border-opacity-100 focus:border-b-2 active:border-opacity-100 active:border-b-2 active:border-red-400"
+                          className="focus:outline-none border-opacity-0 border-b-2 border-transparent hover:border-opacity-100 hover:border-b-2 hover:border-red-400 focus:border-red-400 focus:border-opacity-100 focus:border-b-2 active:border-opacity-100 active:border-b-2 active:border-red-400"
                         >
                           {link.title}
                         </Link>
@@ -98,7 +98,7 @@ function Navbar() {
             <div className="w-1/3 text-center font-bold px-4 md:text-xl lg:text-2xl">
               Solving the Syndrome
             </div>
-            <div class="w-1/3 flex justify-end">
+            <div className="w-1/3 flex justify-end">
               <button
                 className="mx-4 focus:outline-none"
                 onClick={setNavbarstatus}

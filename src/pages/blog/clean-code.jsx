@@ -7,7 +7,7 @@ const CleanCode = () => {
   useEffect(() => {
     const script = document.createElement("script");
     script.src =
-      "https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=js&amp;skin=desert";
+      "https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=js&amp;skin=desert";
     script.async = true;
     document.body.appendChild(script);
   }, []);
@@ -43,7 +43,7 @@ const CleanCode = () => {
         </p>
         <p className="text-xl my-8 leading-10">
           Fast-forward to 2021, and
-          <a href="https://neuralink.com/" class="text-red-400">
+          <a href="https://neuralink.com/" className="text-red-400">
             {" "}
             we're getting closer to making that a reality.
           </a>{" "}
