@@ -40,15 +40,16 @@ function Navbar() {
 
   if (toggle) {
     return (
-      <div className="flex justify-center  text-gray-400 z-20">
-        <div className="fixed w-full bg-gray-900">
-          <div className="flex justify-center items-center bg-gray-900">
+      <div className="flex justify-center bg-gray-900 text-gray-400 z-20">
+        <div className="w-1/2">
+          <div className="flex justify-center items-center">
+            {/* Left */}
             <div className="w-1/3">
               <img className="h-8 m-4" src={logo} alt="Logo"></img>
             </div>
-            <div className="w-1/3 text-center font-bold px-4 md:text-xl lg:text-2xl">
-              A Blog About Coding
-            </div>
+            {/* Middle */}
+            <div className="w-1/3 text-center font-bold px-4 md:text-xl lg:text-2xl"></div>
+            {/* Right */}
             <div className="w-1/3 flex justify-end items-stretch">
               {setNavvy && (
                 <ul className="flex font-semibold bg-gray-900">
@@ -89,13 +90,13 @@ function Navbar() {
 
   if (!toggle) {
     return (
-      <div className="flex justify-center  text-gray-400 z-20">
-        <div className="fixed w-full bg-gray-900">
+      <div className="flex justify-center bg-gray-900 text-gray-400 z-20">
+        <div className="w-1/2">
           <div className="flex justify-center items-center bg-gray-900">
             <div className="w-1/3">
               <img className="h-8 m-4" src={logo} alt="Logo"></img>
             </div>
-            <div className="w-1/3 text-center font-bold px-4 md:text-xl lg:text-2xl">
+            <div className="w-full text-center font-bold px-4 md:text-xl lg:text-2xl">
               Solving the Syndrome
             </div>
             <div className="w-1/3 flex justify-end">
