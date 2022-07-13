@@ -3,9 +3,7 @@ import Home from "./pages/blog/home";
 import Contact from "./pages/blog/contact";
 import Blog from "./pages/blog/blog";
 import IKnowKungFoo from "./pages/blog/i-know-kung-fu";
-import CleanCode from "./pages/blog/clean-code";
-import Test from "./pages/blog/test";
-import Login from "./pages/login";
+import FigmaSlider from "./pages/blog/figma-slider";
 import {
   HashRouter as Router,
   Switch,
@@ -31,6 +29,12 @@ function App() {
             component={Login}
           /> */}
           <Route path="/blog" exact={true} className="blog" component={Blog} />
+          <Route
+            path="/blog/figma-slider"
+            exact={true}
+            className="slider"
+            component={FigmaSlider}
+          />
           <Route
             path="/blog/i-know-kung-foo"
             exact={true}

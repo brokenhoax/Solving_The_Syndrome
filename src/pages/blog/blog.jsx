@@ -14,8 +14,21 @@ const Blog = () => {
         seconds: "00",
       },
       icon: "fas fa-mug-hot",
+      mugs: 1,
       tagline: "This is my red pill",
       path: "/blog/i-know-kung-foo",
+    },
+    {
+      title: "Figma Slider",
+      date: "7-14-2022",
+      length: {
+        minutes: "15",
+        seconds: "00",
+      },
+      icon: "fas fa-mug-hot",
+      mugs: 3,
+      tagline: "Create a slider in Figma.",
+      path: "/blog/figma-slider",
     },
     {
       title: "Ready Set Go",
@@ -25,15 +38,27 @@ const Blog = () => {
         seconds: "00",
       },
       icon: "fas fa-mug-hot",
-      tagline: "You gontta start somewhere.",
+      mugs: 2,
+      tagline: "You gotta start somewhere.",
       path: "/blog/ready-set-go",
     },
   ];
 
+  const test = () => {
+    let i;
+    let n = 2;
+    [...Array(n)].map((elementInArray, index) => (
+      <div className="" key={i}>
+        {" "}
+        Whatever needs to be rendered repeatedly{" "}
+      </div>
+    ));
+  };
+
   useEffect(() => {
     const script = document.createElement("script");
     script.src =
-      "https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=js&amp;skin=desert";
+      "https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=js&amp;skin=desert";
     script.async = true;
     document.body.appendChild(script);
   }, []);
@@ -41,7 +66,7 @@ const Blog = () => {
     <section className="flex items-center justify-center mt-32">
       <div className="inline-flex flex-col items-center space-x-4">
         <div className="inline-flex items-center w-full pb-6 ml-8">
-          <img src={headshot} class="rounded-full h-16" alt="Logo"></img>
+          <img src={headshot} className="rounded-full h-16" alt="Logo"></img>
           <div className="ml-4 font-semibold text-base">
             <div>Andrew Kraus</div>
             <div className="pb-0.5 text-red-400">@brokenhoax</div>
@@ -58,7 +83,9 @@ const Blog = () => {
               </Link>
               <div className="leading-7">
                 <div className="flex items-center">
+                  {}
                   <div className="text-lg text-red-400">{post.tagline}</div>
+                  {test()}
                   <i className={`${post.icon} px-2 text-gray-400`}></i>
                   <p className="text-red-400">{post.length.minutes} Minutes</p>
                 </div>

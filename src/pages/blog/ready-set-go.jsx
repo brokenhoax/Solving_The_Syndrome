@@ -13,10 +13,10 @@ const ReadySetGo = () => {
     document.body.appendChild(script);
   }, []);
   return (
-    <section className="flex flex-col items-center font-semibold text-lg mt-20">
+    <section className="flex flex-col items-center leading-9 text-lg mt-20">
       <div className="w-1/2 sm:w-1/2 2xl:1/4 space-y-4">
-        <h1 className="self-center text-5xl font-bold mb-2">Ready Set Go</h1>
-        <h2 className="italic text-red-400">June 8th, 2022</h2>
+        <h1 className="self-center text-5xl font-bold">Ready Set Go</h1>
+        <p className="italic text-red-400">June 8th, 2022</p>
         <div className="block border-b border-gray-700"></div>
         <p className="text-2xl leading-10 mt-12 italic">
           So, you've dabbled with{" "}
@@ -31,7 +31,7 @@ const ReadySetGo = () => {
           and you're ready to build something useful and share it with the
           world. Now what? This post will walk through the following steps:
         </p>
-        <ol className="list-decimal pt-2 pb-4 pl-8 font-medium space-y-2 text-2xl  text-gray-500">
+        <ol className="list-decimal pt-2 pb-4 pl-8 font-medium space-y-2 text-xl  text-gray-600">
           <li>
             <HashLink to="/blog/ready-set-go#register">
               Setting up an account on GitHub
@@ -65,7 +65,7 @@ const ReadySetGo = () => {
           </li>
         </ol>
         <div className="block border-b border-gray-700"></div>
-        <h2 id="register" className="text-3xl pt-2">
+        <h2 id="register" className="text-3xl pt-2 font-semibold">
           Setting up an account on Github
         </h2>
         <p>
@@ -76,7 +76,7 @@ const ReadySetGo = () => {
           </span>
           and follow the prompts to set up an account.
         </p>
-        <h2 id="create" className="text-3xl pt-2">
+        <h2 id="create" className="text-3xl pt-2 font-semibold">
           Creating a GitHub repository
         </h2>
         <p>
@@ -88,7 +88,7 @@ const ReadySetGo = () => {
           to save a few keyboard strokes. Give your repository a name and set it
           to "public". No need to bother with any of the other settings for now.
         </p>
-        <h2 id="clone" className="text-3xl pt-2">
+        <h2 id="clone" className="text-3xl pt-2 font-semibold">
           Cloning your GitHub repository
         </h2>
         <p>
@@ -105,7 +105,7 @@ const ReadySetGo = () => {
     git clone <your-git-repository>
           `}
         </pre>
-        <h2 id="push" className="text-3xl pt-2">
+        <h2 id="push" className="text-3xl pt-2 font-semibold">
           Make and push your changes to Github
         </h2>
         <p>
@@ -131,7 +131,7 @@ const ReadySetGo = () => {
   git push
           `}
         </pre>
-        <h2 id="build" className="text-3xl pt-2">
+        <h2 id="build" className="text-3xl pt-2 font-semibold">
           Creating a production build
         </h2>
         <p>
@@ -146,7 +146,7 @@ const ReadySetGo = () => {
   npm run build
           `}
         </pre>
-        <h2 id="deploy" className="text-3xl pt-2">
+        <h2 id="deploy" className="text-3xl pt-2 font-semibold">
           Deploying your build to Github Pages
         </h2>
         <p>
