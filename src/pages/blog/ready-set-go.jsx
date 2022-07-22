@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { HashLink } from "react-router-hash-link";
 import "../../styles/scss/blog.scss";
 import "../../styles/app.css";
-import logo from "../../assets/logo.png";
+import Footer from "../../components/common/footer";
 
 const ReadySetGo = () => {
   useEffect(() => {
@@ -14,7 +14,7 @@ const ReadySetGo = () => {
   }, []);
   return (
     <section className="flex flex-col items-center leading-9 text-lg mt-20">
-      <div className="w-1/2 sm:w-1/2 2xl:1/4 space-y-4">
+      <div className="w-full md:w-700 space-y-4 px-8">
         <h1 className="self-center text-5xl font-bold">Ready Set Go</h1>
         <p className="italic text-red-400">June 8th, 2022</p>
         <div className="block border-b border-gray-700"></div>
@@ -160,13 +160,7 @@ const ReadySetGo = () => {
   😎`}
         </pre>
       </div>
-      <footer className="flex items-end justify-end h-48 mt-12 w-full bg-gray-900 opacity-50">
-        <div className="asolute"> </div>{" "}
-      </footer>
-      <div className="relative flex items-center z-10 -m-16">
-        <div className="text-xs">2022 Solving the Syndrome</div>
-        <img className="h-6 m-4" src={logo} alt="Logo"></img>
-      </div>
+      <Footer></Footer>
     </section>
   );
 };

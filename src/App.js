@@ -19,42 +19,54 @@ function App() {
     <Router>
       <div className="wrapper h-screen text-gray-400 font-plex">
         <Navbar className="navbar" />
-        <Switch>
-          <Route path="/" exact={true} component={Blog} />
-          <Route path="/home" exact={true} className="home" component={Home} />
-          {/* <Route
+        <div className="">
+          <Switch>
+            <Route path="/" exact={true} component={Blog} />
+            <Route
+              path="/home"
+              exact={true}
+              className="home"
+              component={Home}
+            />
+            {/* <Route
             path="/login"
             exact={true}
             className="login"
             component={Login}
           /> */}
-          <Route path="/blog" exact={true} className="blog" component={Blog} />
-          <Route
-            path="/blog/figma-slider"
-            exact={true}
-            className="slider"
-            component={FigmaSlider}
-          />
-          <Route
-            path="/blog/i-know-kung-foo"
-            exact={true}
-            className="blog"
-            component={IKnowKungFoo}
-          />
-          <Route
-            path="/blog/ready-set-go"
-            exact={true}
-            className="blog"
-            component={ReadySetGo}
-          />
-          <Route
-            path="/contact"
-            exact={true}
-            className="contact"
-            component={Contact}
-          />
-          <Redirect from="*" to="/404" />
-        </Switch>
+            <Route
+              path="/blog"
+              exact={true}
+              className="blog"
+              component={Blog}
+            />
+            <Route
+              path="/blog/figma-slider"
+              exact={true}
+              className="slider"
+              component={FigmaSlider}
+            />
+            <Route
+              path="/blog/i-know-kung-foo"
+              exact={true}
+              className="blog"
+              component={IKnowKungFoo}
+            />
+            <Route
+              path="/blog/ready-set-go"
+              exact={true}
+              className="blog"
+              component={ReadySetGo}
+            />
+            <Route
+              path="/contact"
+              exact={true}
+              className="contact"
+              component={Contact}
+            />
+            <Redirect from="*" to="/404" />
+          </Switch>
+        </div>
       </div>
     </Router>
   );

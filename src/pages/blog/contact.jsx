@@ -1,19 +1,12 @@
-import React, { useEffect } from "react";
 import headshot from "../../assets/headshot.png";
 import "../../styles/scss/blog.scss";
 import "../../styles/app.css";
+import Footer from "../../components/common/footer";
 
 const Contact = () => {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src =
-      "https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=js&amp;skin=desert";
-    script.async = true;
-    document.body.appendChild(script);
-  }, []);
   return (
     <section className="flex flex-col items-center justify-center mt-20">
-      <div className="w-1/2 2xl:w-1/3">
+      <div className="w-full md:w-700 px-8">
         <h1 className="self-center text-5xl font-bold mb-2">About Me</h1>
         <h2 className="italic text-red-400">June 5th, 2022</h2>
         <p className="text-xl my-8 leading-10">
@@ -79,6 +72,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </section>
   );
 };

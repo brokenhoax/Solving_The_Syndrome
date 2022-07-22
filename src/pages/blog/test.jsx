@@ -3,13 +3,6 @@ import "../../styles/scss/blog.scss";
 import "../../styles/app.css";
 
 const Test = () => {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src =
-      "https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=js&amp;skin=desert";
-    script.async = true;
-    document.body.appendChild(script);
-  }, []);
   return (
     <div className="m-64 h-32">
       <div className="h-64 mx-64 overflow-y-auto">

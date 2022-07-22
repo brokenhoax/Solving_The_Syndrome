@@ -4,13 +4,6 @@ import "../../styles/app.css";
 import kungfoo from "../../assets/images/kung-foo.jpg";
 
 const CleanCode = () => {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src =
-      "https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=js&amp;skin=desert";
-    script.async = true;
-    document.body.appendChild(script);
-  }, []);
   return (
     <section className="flex flex-col items-center mt-8">
       <div className="w-1/3">

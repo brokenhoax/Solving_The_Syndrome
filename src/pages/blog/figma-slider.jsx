@@ -1,34 +1,36 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import "../../styles/scss/blog.scss";
 import "../../styles/app.css";
+import prototype from "../../assets/images/slider.png";
 import slider_handle from "../../assets/images/slider_handle.png";
-import logo from "../../assets/logo.png";
+import slider_bar from "../../assets/images/slider_bar.png";
+import interactions from "../../assets/images/interactions.png";
+import constraint_full from "../../assets/images/constraints_full.png";
+import constraint_half from "../../assets/images/constraints_half.png";
+import constraint_zero from "../../assets/images/constraints_zero.png";
+import Footer from "../../components/common/footer";
 
 const FigmaSlider = () => {
-  const [toggle, setToggle] = useState(false);
-
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src =
-      "https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=js&amp;skin=desert";
-    script.async = true;
-    document.body.appendChild(script);
-  }, []);
-
-  let test = true;
+  const [slider, showSlider] = useState(true);
+  const [handle, showHandle] = useState(true);
+  const [bar, showBar] = useState(true);
+  const [interaction, showInteractions] = useState(true);
+  const [constraintZero, showZero] = useState(true);
+  const [constraintHalf, showHalf] = useState(true);
+  const [constraintFull, showFull] = useState(true);
 
   return (
-    <section className="flex flex-col items-center leading-9 text-lg mt-20 pb-32">
-      <div className="w-1/2 sm:w-1/2 2xl:1/4 space-y-8">
+    <section className="flex flex-col items-center leading-9 text-base md:text-large  mt-20">
+      <div className="w-full md:w-700 px-8 space-y-8">
         {/* Title */}
-        <div class="space-y-4">
-          <h1 className="self-center text-5xl font-bold" id="title">
+        <div className="space-y-4">
+          <h1 className="self-center text-3xl md:text-5xl font-bold" id="title">
             Figma Slider
           </h1>
           <div className="italic text-red-400">June 8th, 2022</div>
           <div className="block border-b border-gray-700"></div>
-          <p className="text-2xl leading-10 mt-12 italic">
+          <p className="text-base md:text-2xl leading-8 md:leading-10 mt-12 font-normal">
             I'm working on a mockup for a new feature at work and I've been
             asked to include a slider that allows a user to change "synonym
             sensitivity" on a scale from zero to one. I figured building a
@@ -38,9 +40,47 @@ const FigmaSlider = () => {
             Let's jump in!
           </p>
         </div>
+        {/* Slider Image */}
+        <div className="flex flex-col items-center justify-center pt-4">
+          {slider && (
+            <button className="w-full">
+              <img
+                onClick={() => showSlider((slider) => !slider)}
+                className="rounded-md w-1/2 inline-flex items-center justify-center"
+                src={prototype}
+                alt="slider"
+              ></img>
+            </button>
+          )}
+          {!slider && (
+            <button className="">
+              <img
+                onClick={() => showSlider((slider) => !slider)}
+                className="rounded-md"
+                src={prototype}
+                alt="slider"
+              ></img>
+            </button>
+          )}
+          <button
+            className="flex items-center py-2 space-x-2"
+            onClick={() => showSlider((slider) => !slider)}
+          >
+            <i
+              className={`fas fa-camera ${interaction ? "text-lg" : "text-sm"}`}
+            ></i>
+            <div className={`${interaction ? "text-sm" : "text-xs"}`}>
+              Figma slider prototype
+            </div>
+          </button>
+        </div>
+        <hr></hr>
         {/* Table of Contents */}
         <div>
-          <h2 id="toc" className="text-2xl font-semibold pb-2 text-gray-500">
+          <h2
+            id="toc"
+            className="text-2xl md:text-3xl font-semibold pb-2 text-gray-500"
+          >
             Table of Contents
           </h2>
           <ol className="list-decimal pl-8 font-medium space-y-2 text-xl  text-gray-600">
@@ -69,12 +109,15 @@ const FigmaSlider = () => {
             </li>
           </ol>
         </div>
-        <div className="block border-b border-gray-700"></div>
+        <hr></hr>
         {/* Components and Variants */}
         <div className="space-y-4">
-          <h2 id="components-and-variants" className="text-3xl font-semibold">
+          <h2
+            id="components-and-variants"
+            className="text-2xl md:text-3xl font-semibold"
+          >
             Components and Variants{" "}
-            <span className="text-3xl text-red-400 pl-1">
+            <span className="text-2xl md:text-3xl text-red-400 pl-1">
               {" "}
               <HashLink to="/blog/figma-slider#title">#</HashLink>
             </span>
@@ -100,78 +143,13 @@ const FigmaSlider = () => {
             building our slider, let's give it a home to live within Figma.
             Let's create a new frame and call it “slider”.
           </p>
-          {/* Slider SVG */}
-          <div className="flex items-center justify-center pt-4 w-full">
-            <svg
-              width="372"
-              height="276"
-              viewBox="0 0 272 176"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <line
-                x1="22"
-                y1="36"
-                x2="34"
-                y2="36"
-                stroke="#0284C7"
-                stroke-width="4"
-                stroke-linecap="round"
-              />
-              <path
-                d="M250 38C251.105 38 252 37.1046 252 36C252 34.8954 251.105 34 250 34L250 38ZM36 38L250 38L250 34L36 34L36 38Z"
-                fill="#E0F2FE"
-              />
-              <circle cx="36" cy="36" r="16" fill="#0284C7" />
-              <circle cx="36" cy="36" r="8" fill="#F0F9FF" />
-              <line
-                x1="22"
-                y1="88"
-                x2="133"
-                y2="88"
-                stroke="#0284C7"
-                stroke-width="4"
-                stroke-linecap="round"
-              />
-              <path
-                d="M250 90C251.105 90 252 89.1046 252 88C252 86.8954 251.105 86 250 86V90ZM135 90H250V86H135V90Z"
-                fill="#E0F2FE"
-              />
-              <circle cx="135" cy="88" r="16" fill="#0284C7" />
-              <circle cx="135" cy="88" r="8" fill="#F0F9FF" />
-              <path
-                d="M250 142C251.105 142 252 141.105 252 140C252 138.895 251.105 138 250 138L250 142ZM236 142L250 142L250 138L236 138L236 142Z"
-                fill="#E0F2FE"
-              />
-              <line
-                x1="22"
-                y1="140"
-                x2="228"
-                y2="140"
-                stroke="#0284C7"
-                stroke-width="4"
-                stroke-linecap="round"
-              />
-              <circle cx="236" cy="140" r="16" fill="#0284C7" />
-              <circle cx="236" cy="140" r="8" fill="#F0F9FF" />
-              <rect
-                x="0.5"
-                y="0.5"
-                width="271"
-                height="175"
-                rx="4.5"
-                stroke="#9747FF"
-                stroke-dasharray="10 5"
-              />
-            </svg>
-          </div>
         </div>
         <div className="block border-b border-gray-700"></div>
         {/* Slider Handle */}
         <div className="flex flex-col space-y-4">
-          <h2 id="slider-handle" className="text-3xl font-semibold">
+          <h2 id="slider-handle" className="text-2xl md:text-3xl font-semibold">
             Slider Handle{" "}
-            <span className="text-3xl text-red-400 pl-1">
+            <span className="text-2xl md:text-3xl text-red-400 pl-1">
               {" "}
               <HashLink to="/blog/figma-slider#title">#</HashLink>
             </span>
@@ -179,41 +157,38 @@ const FigmaSlider = () => {
           <p>
             Now that we know what we're building and where it should live, let's
             work on the first piece of our slider—the slider handle:
-            {/* Slider Handle Image */}
-            <div className="flex flex-col items-center justify-center pt-4">
-              {toggle && (
-                <button className="rounded-md">
-                  <img
-                    onClick={() => setToggle((prevCheck) => !prevCheck)}
-                    className="rounded-md"
-                    src={slider_handle}
-                    alt="slider_handle"
-                  ></img>
-                </button>
-              )}
-              {!toggle && (
-                <button className="w-1/2">
-                  <img
-                    onClick={() => setToggle((prevCheck) => !prevCheck)}
-                    className="rounded-md"
-                    src={slider_handle}
-                    alt="slider_handle"
-                  ></img>
-                </button>
-              )}
-              <button
-                onClick={() => setToggle((prevCheck) => !prevCheck)}
-                className="flex items-center py-2 space-x-2"
-              >
-                <i
-                  className={`fas fa-camera ${toggle ? "text-lg" : "text-sm"}`}
-                ></i>
-                <div className={`${toggle ? "text-sm" : "text-xs"}`}>
-                  Slider handle component in Figma (Large Preview)
-                </div>
-              </button>
-            </div>
           </p>
+          {/* Slider Handle Image */}
+          <div className="flex flex-col items-center justify-center pt-4">
+            {handle && (
+              <button className="">
+                <img
+                  onClick={() => showHandle((toggle) => !toggle)}
+                  className="inline-flex items-center justify-center rounded-md w-1/2"
+                  src={slider_handle}
+                  alt="slider_handle"
+                ></img>
+              </button>
+            )}
+            {!handle && (
+              <button className="">
+                <img
+                  onClick={() => showHandle((toggle) => !toggle)}
+                  className="rounded-md"
+                  src={slider_handle}
+                  alt="slider_handle"
+                ></img>
+              </button>
+            )}
+            <button className="flex items-center py-2 space-x-2">
+              <i
+                className={`fas fa-camera ${handle ? "text-lg" : "text-sm"}`}
+              ></i>
+              <div className={`${handle ? "text-sm" : "text-xs"}`}>
+                Slider handle component in Figma
+              </div>
+            </button>
+          </div>
           <p>
             Our handle will be a simple circle shape handle consisting of two
             circles: a big, outer circle and a smaller, inner circle for added
@@ -228,13 +203,41 @@ const FigmaSlider = () => {
         </div>
         {/* Slider Bar */}
         <div className="space-y-4">
-          <h2 id="slider-bar" className="text-3xl font-semibold">
+          <h2 id="slider-bar" className="text-2xl md:text-3xl font-semibold">
             Slider Bar{" "}
-            <span className="text-3xl text-red-400 pl-1">
+            <span className="text-2xl md:text-3xl text-red-400 pl-1">
               {" "}
               <HashLink to="/blog/figma-slider#title">#</HashLink>
             </span>
           </h2>
+          <div className="flex flex-col items-center justify-center pt-4">
+            {bar && (
+              <button className="">
+                <img
+                  onClick={() => showBar((handle) => !handle)}
+                  className="rounded-md inline-flex items-center justify-center w-1/2"
+                  src={slider_bar}
+                  alt="slider_bar"
+                ></img>
+              </button>
+            )}
+            {!bar && (
+              <button className="">
+                <img
+                  onClick={() => showBar((handle) => !handle)}
+                  className="rounded-md"
+                  src={slider_bar}
+                  alt="slider_bar"
+                ></img>
+              </button>
+            )}
+            <button className="flex items-center py-2 space-x-2">
+              <i className={`fas fa-camera ${bar ? "text-lg" : "text-sm"}`}></i>
+              <div className={`${bar ? "text-sm" : "text-xs"}`}>
+                Slider handle component in Figma
+              </div>
+            </button>
+          </div>
           <p>
             Next up is the slider bar which we'll have positioned horizontally
             with the zero scale indicator on the left and the one scale
@@ -275,13 +278,45 @@ const FigmaSlider = () => {
         </div>
         {/* Interactions */}
         <div className="space-y-4">
-          <h2 id="interactions" className="text-3xl font-semibold">
+          <h2 id="interactions" className="text-2xl md:text-3xl font-semibold">
             Interactions{" "}
-            <span className="text-3xl text-red-400 pl-1">
+            <span className="text-2xl md:text-3xl text-red-400 pl-1">
               {" "}
               <HashLink to="/blog/figma-slider#title">#</HashLink>
             </span>
           </h2>
+          <div className="flex flex-col items-center justify-center mx-auto pt-4 w-full">
+            {interaction && (
+              <button className="w-full">
+                <img
+                  onClick={() => showInteractions((handle) => !handle)}
+                  className="rounded-md w-1/2 inline-flex items-center justify-center"
+                  src={interactions}
+                  alt="interactions"
+                ></img>
+              </button>
+            )}
+            {!interaction && (
+              <button className="">
+                <img
+                  onClick={() => showInteractions((handle) => !handle)}
+                  className="rounded-md"
+                  src={interactions}
+                  alt="interactions"
+                ></img>
+              </button>
+            )}
+            <button className="flex items-center py-2 space-x-2">
+              <i
+                className={`fas fa-camera ${
+                  interaction ? "text-lg" : "text-sm"
+                }`}
+              ></i>
+              <div className={`${interaction ? "text-sm" : "text-xs"}`}>
+                Slider handle component in Figma
+              </div>
+            </button>
+          </div>
           <p>
             Now that we've built our slider component and variants, let's
             discuss how we'll make our slider interactive. Since we aren't
@@ -317,9 +352,9 @@ const FigmaSlider = () => {
         </div>
         {/* Constraints */}
         <div className="space-y-4">
-          <h2 id="constraints" className="text-3xl font-semibold">
+          <h2 id="constraints" className="text-2xl md:text-3xl font-semibold">
             Constraints{" "}
-            <span className="text-3xl text-red-400 pl-1">
+            <span className="text-2xl md:text-3xl text-red-400 pl-1">
               {" "}
               <HashLink to="/blog/figma-slider#title">#</HashLink>
             </span>
@@ -358,6 +393,37 @@ const FigmaSlider = () => {
             inner circle will have a horizontal and vertical constraint both set
             to “center”.
           </p>
+          {/* Empty Slider Constraints */}
+          <div className="flex flex-col items-center justify-center pt-4">
+            {constraintZero && (
+              <button className="">
+                <img
+                  onClick={() => showZero((handle) => !handle)}
+                  className="rounded-md w-1/2 inline-flex items-center justify-center"
+                  src={constraint_zero}
+                  alt="Empty state constraints"
+                ></img>
+              </button>
+            )}
+            {!constraintZero && (
+              <button className="">
+                <img
+                  onClick={() => showZero((handle) => !handle)}
+                  className="rounded-md"
+                  src={constraint_zero}
+                  alt="Empty state constraints"
+                ></img>
+              </button>
+            )}
+            <button className="flex items-center py-2 space-x-2">
+              <i
+                className={`fas fa-camera ${handle ? "text-lg" : "text-sm"}`}
+              ></i>
+              <div className={`${handle ? "text-sm" : "text-xs"}`}>
+                Slider handle component in Figma
+              </div>
+            </button>
+          </div>
           <p>
             Our half state's constraints is probably the trickiest part of this
             Figma project. Both slider bars will have a horizontal constraint of
@@ -369,6 +435,37 @@ const FigmaSlider = () => {
             of “center” and our inner circle will maintain the same “center /
             center” constraints as was described above.
           </p>
+          {/* Half Slider Constraints */}
+          <div className="flex flex-col items-center justify-center pt-4">
+            {constraintHalf && (
+              <button className="">
+                <img
+                  onClick={() => showHalf((handle) => !handle)}
+                  className="rounded-md w-1/2 inline-flex items-center justify-center"
+                  src={constraint_half}
+                  alt="Empty state constraints"
+                ></img>
+              </button>
+            )}
+            {!constraintHalf && (
+              <button className="">
+                <img
+                  onClick={() => showHalf((handle) => !handle)}
+                  className="rounded-md"
+                  src={constraint_half}
+                  alt="Empty state constraints"
+                ></img>
+              </button>
+            )}
+            <button className="flex items-center py-2 space-x-2">
+              <i
+                className={`fas fa-camera ${handle ? "text-lg" : "text-sm"}`}
+              ></i>
+              <div className={`${handle ? "text-sm" : "text-xs"}`}>
+                Slider handle component in Figma
+              </div>
+            </button>
+          </div>
           <p>
             Last but not least, our full state's constraints are similar to our
             empty state's constraints but inverted for the slider handle frame.
@@ -380,6 +477,37 @@ const FigmaSlider = () => {
             vertical constraint of “left and right” and our inner circle will
             have a horizontal and vertical constraint both set to “center”.
           </p>
+          {/* Half Slider Constraints */}
+          <div className="flex flex-col items-center justify-center pt-4">
+            {constraintFull && (
+              <button className="">
+                <img
+                  onClick={() => showFull((handle) => !handle)}
+                  className="rounded-md w-1/2 inline-flex items-center justify-center"
+                  src={constraint_full}
+                  alt="Empty state constraints"
+                ></img>
+              </button>
+            )}
+            {!constraintFull && (
+              <button className="">
+                <img
+                  onClick={() => showFull((handle) => !handle)}
+                  className="rounded-md"
+                  src={constraint_full}
+                  alt="Empty state constraints"
+                ></img>
+              </button>
+            )}
+            <button className="flex items-center py-2 space-x-2">
+              <i
+                className={`fas fa-camera ${handle ? "text-lg" : "text-sm"}`}
+              ></i>
+              <div className={`${handle ? "text-sm" : "text-xs"}`}>
+                Slider handle component in Figma
+              </div>
+            </button>
+          </div>
           <p>
             It took me a little while to understand how constraints worked and I
             came to a better understanding by trying different settings and
@@ -390,6 +518,7 @@ const FigmaSlider = () => {
           </p>
         </div>
       </div>
+      <Footer></Footer>
     </section>
   );
 };

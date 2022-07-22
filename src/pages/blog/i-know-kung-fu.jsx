@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "../../styles/scss/blog.scss";
 import "../../styles/app.css";
 import kungfoo from "../../assets/images/kung-foo.jpg";
+import Footer from "../../components/common/footer";
 
 const IKnowKungFoo = () => {
   useEffect(() => {
@@ -13,7 +14,7 @@ const IKnowKungFoo = () => {
   }, []);
   return (
     <section className="flex flex-col items-center mt-20">
-      <div className="w-1/3">
+      <div className="w-full md:w-700 px-8">
         <h1 className="self-center text-5xl font-bold mb-2">I Know Kung Foo</h1>
         <h2 className="italic text-red-400">March 5th, 2021</h2>
         <p className="text-xl my-8 leading-10 mt-12">
@@ -97,6 +98,7 @@ const IKnowKungFoo = () => {
           distinctio impedit, officiis dolor excepturi ab placeat ad!
         </p>
       </div>
+      <Footer></Footer>
     </section>
   );
 };

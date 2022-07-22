@@ -41,11 +41,16 @@ function Navbar() {
   if (toggle) {
     return (
       <div className="flex justify-center bg-gray-900 text-gray-400 z-20">
-        <div className="w-1/2">
+        <div className="w-full md:w-700 px-8">
           <div className="flex justify-center items-center">
             {/* Left */}
             <div className="w-1/3">
-              <img className="h-8 my-4" src={logo} alt="Logo"></img>
+              <Link
+                to={"/blog"}
+                className="h-full focus:outline-none border-b-2 border-transparent border-opacity-100 border-red-400"
+              >
+                <img className="h-8 my-4" src={logo} alt="Logo"></img>
+              </Link>
             </div>
             {/* Middle */}
             <div className="w-1/3 text-center font-bold px-4 md:text-xl lg:text-2xl"></div>
@@ -91,22 +96,22 @@ function Navbar() {
   if (!toggle) {
     return (
       <div className="flex justify-center bg-gray-900 text-gray-400 z-20">
-        <div className="w-1/2">
-          <div className="flex justify-center items-center bg-gray-900">
-            <div className="w-1/3">
-              <img className="h-8 my-4" src={logo} alt="Logo"></img>
+        <div className="flex justify-between items-center px-8 w-full md:w-700">
+          {/* Logo & Title */}
+          <div className="flex justify-start items-center w-full">
+            <img className="h-8 my-4" src={logo} alt="Logo"></img>
+            <div className="text-center font-bold px-4 md:text-xl lg:text-2xl">
+              Changeblog
             </div>
-            <div className="w-full text-center font-bold px-4 md:text-xl lg:text-2xl">
-              Solving the Syndrome
-            </div>
-            <div className="w-1/3 flex justify-end">
-              <button
-                className="ml-4 focus:outline-none"
-                onClick={setNavbarstatus}
-              >
-                <FontAwesomeIcon icon={faMinus} size="lg" />
-              </button>
-            </div>
+          </div>
+          {/* Buttons */}
+          <div className="w-1/3 flex justify-end">
+            <button
+              className="ml-4 focus:outline-none"
+              onClick={setNavbarstatus}
+            >
+              <FontAwesomeIcon icon={faMinus} size="lg" />
+            </button>
           </div>
         </div>
       </div>
