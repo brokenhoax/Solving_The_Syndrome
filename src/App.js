@@ -4,6 +4,7 @@ import Contact from "./pages/blog/contact";
 import Blog from "./pages/blog/blog";
 import IKnowKungFoo from "./pages/blog/i-know-kung-fu";
 import FigmaSlider from "./pages/blog/figma-slider";
+import ReactComponents from "./pages/blog/react-components";
 import {
   HashRouter as Router,
   Switch,
@@ -47,7 +48,13 @@ function App() {
               component={FigmaSlider}
             />
             <Route
-              path="/blog/i-know-kung-foo"
+              path="/blog/react-components"
+              exact={true}
+              className="blog"
+              component={ReactComponents}
+            />
+            <Route
+              path="/blog/react-components"
               exact={true}
               className="blog"
               component={IKnowKungFoo}

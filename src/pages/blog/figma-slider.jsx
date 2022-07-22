@@ -21,7 +21,7 @@ const FigmaSlider = () => {
   const [constraintFull, showFull] = useState(true);
 
   return (
-    <section className="flex flex-col items-center leading-9 text-base md:text-large  mt-20">
+    <section className="flex flex-col items-center leading-8 md:leading-10 text-base md:text-lg mt-20">
       <div className="w-full md:w-700 px-8 space-y-8">
         {/* Title */}
         <div className="space-y-4">
@@ -30,12 +30,12 @@ const FigmaSlider = () => {
           </h1>
           <div className="italic text-red-400">June 8th, 2022</div>
           <div className="block border-b border-gray-700"></div>
-          <p className="text-base md:text-2xl leading-8 md:leading-10 mt-12 font-normal">
+          <p className="text-base md:text-xl leading-8 md:leading-10 mt-12 font-normal italic">
             I'm working on a mockup for a new feature at work and I've been
             asked to include a slider that allows a user to change "synonym
             sensitivity" on a scale from zero to one. I figured building a
             slider in Figma would be a worthy challenge and one worth sharing.
-            For starters, this tutorial will expose you to the Figma concepts of
+            What's more, this tutorial will expose you to the Figma concepts of
             components/variants, constraints, interactions, and basic styling.
             Let's jump in!
           </p>
@@ -70,7 +70,7 @@ const FigmaSlider = () => {
               className={`fas fa-camera ${interaction ? "text-lg" : "text-sm"}`}
             ></i>
             <div className={`${interaction ? "text-sm" : "text-xs"}`}>
-              Figma slider prototype
+              Figma slider component
             </div>
           </button>
         </div>
@@ -185,7 +185,7 @@ const FigmaSlider = () => {
                 className={`fas fa-camera ${handle ? "text-lg" : "text-sm"}`}
               ></i>
               <div className={`${handle ? "text-sm" : "text-xs"}`}>
-                Slider handle component in Figma
+                Figma slider handle
               </div>
             </button>
           </div>
@@ -234,7 +234,7 @@ const FigmaSlider = () => {
             <button className="flex items-center py-2 space-x-2">
               <i className={`fas fa-camera ${bar ? "text-lg" : "text-sm"}`}></i>
               <div className={`${bar ? "text-sm" : "text-xs"}`}>
-                Slider handle component in Figma
+                Figma slider bar
               </div>
             </button>
           </div>
@@ -260,20 +260,20 @@ const FigmaSlider = () => {
           </p>
           <p>
             We can make our slider bars any length but each variant's slider bar
-            lengths should be uniform. Let's go with 256 pixels which means
-            that, for our half-state slider the dark-blue slider bar will be
-            128px and the light-blue slider bar will be 128px for a total of 256
-            pixels. Since we're starting with an empty state slider we'll just
-            create one slider bar with a color of light-blue and a width of
-            256px. We'll now place our slider handle center and to the far left
-            of our slider bar and we'll select both the slider bar and handle
-            and put them in a frame. We'll then turn that frame into a component
-            which we'll name “empty”. Once we have our Figma component, we can
-            create two additional variants which we'll call “half” and “full”.
-            You'll notice that these variants are identical to our default
-            “empty” variant, so we'll need to make some tweaks to make each
-            variant represent their respective states. Don't forget to add two
-            slider bars for our “half” state!
+            length should be uniform. Let's go with 256 pixels which means that,
+            for our half-state slider the dark-blue slider bar will be 128px and
+            the light-blue slider bar will be 128px for a total of 256 pixels.
+            Since we're starting with an empty state slider we'll just create
+            one slider bar with a color of light-blue and a width of 256px.
+            We'll now place our slider handle center and to the far left of our
+            slider bar and we'll select both the slider bar and handle and put
+            them in a frame. We'll then turn that frame into a component which
+            we'll name “empty”. Once we have our Figma component, we can create
+            two additional variants which we'll call “half” and “full”. You'll
+            notice that these variants are identical to our default “empty”
+            variant, so we'll need to make some tweaks to make each variant
+            represent their respective states. Don't forget to add two slider
+            bars for our “half” state!
           </p>
         </div>
         {/* Interactions */}
@@ -313,7 +313,7 @@ const FigmaSlider = () => {
                 }`}
               ></i>
               <div className={`${interaction ? "text-sm" : "text-xs"}`}>
-                Slider handle component in Figma
+                Figma slider interactions
               </div>
             </button>
           </div>
@@ -420,7 +420,7 @@ const FigmaSlider = () => {
                 className={`fas fa-camera ${handle ? "text-lg" : "text-sm"}`}
               ></i>
               <div className={`${handle ? "text-sm" : "text-xs"}`}>
-                Slider handle component in Figma
+                Figma empty slider constraints
               </div>
             </button>
           </div>
@@ -462,7 +462,7 @@ const FigmaSlider = () => {
                 className={`fas fa-camera ${handle ? "text-lg" : "text-sm"}`}
               ></i>
               <div className={`${handle ? "text-sm" : "text-xs"}`}>
-                Slider handle component in Figma
+                Figma half slider constraints
               </div>
             </button>
           </div>
@@ -504,7 +504,7 @@ const FigmaSlider = () => {
                 className={`fas fa-camera ${handle ? "text-lg" : "text-sm"}`}
               ></i>
               <div className={`${handle ? "text-sm" : "text-xs"}`}>
-                Slider handle component in Figma
+                Figma full slider constraints
               </div>
             </button>
           </div>

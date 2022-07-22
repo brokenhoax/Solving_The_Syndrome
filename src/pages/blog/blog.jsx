@@ -7,7 +7,7 @@ import headshot from "../../assets/headshot.png";
 const Blog = () => {
   const posts = [
     {
-      title: "I Know Kung Foo",
+      title: "React Components",
       date: "5-5-2021",
       length: {
         minutes: "5",
@@ -15,8 +15,8 @@ const Blog = () => {
       },
       icon: "fas fa-mug-hot",
       mugs: 1,
-      tagline: "This is my red pill",
-      path: "/blog/i-know-kung-foo",
+      tagline: "DRY your code with React components.",
+      path: "/blog/react-components",
     },
     {
       title: "Figma Slider",
@@ -63,36 +63,39 @@ const Blog = () => {
     document.body.appendChild(script);
   }, []);
   return (
-    <section className="flex items-center justify-center mt-32">
-      <div className="inline-flex flex-col items-center space-x-4">
-        <div className="inline-flex items-center w-full pb-6 ml-8">
+    <section className="flex items-center justify-center min-w-full">
+      <div className="flex flex-col w-full md:w-700 px-8">
+        {/* Author Data */}
+        <div className="flex items-center w-full pt-16 md:pt-20 pb-6">
           <img src={headshot} className="rounded-full h-16" alt="Logo"></img>
           <div className="ml-4 font-semibold text-base">
             <div>Andrew Kraus</div>
             <div className="pb-0.5 text-red-400">@brokenhoax</div>
           </div>
         </div>
-        <ul>
+        {/* Posts */}
+        <ul className="flex flex-col items-start mt-4">
           {posts.map((post, index) => (
-            <li className="border-0 mt-6" key={index}>
+            <li className="mb-2 w-full" key={index}>
               <Link
                 to={post.path}
-                className="text-4xl font-semibold text-red-400 hover:text-white"
+                className="text-2xl md:text-4xl font-semibold text-red-400 hover:text-white"
               >
                 {post.title}
               </Link>
               <div className="leading-7">
-                <div className="flex items-center">
-                  {}
-                  <div className="text-lg text-red-400">{post.tagline}</div>
-                  {test()}
-                  <i className={`${post.icon} px-2 text-gray-400`}></i>
-                  <p className="text-red-400">{post.length.minutes} Minutes</p>
+                <div className="flex items-center justify-between text-red-400 text-sm md:text-lg">
+                  <div>{post.tagline}</div>
+                  <div className="flex items-center">
+                    <i className={`${post.icon} px-2 text-gray-400`}></i>
+                    <p>{post.length.minutes} Minutes</p>
+                  </div>
                 </div>
                 <div className="text-sm text-gray-400 font-semibold">
                   {post.date}
                 </div>
               </div>
+              <hr className="mt-4 border-b border-gray-200 border-dotted"></hr>
             </li>
           ))}
           <li></li>
