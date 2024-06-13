@@ -44,17 +44,6 @@ const Blog = () => {
     },
   ];
 
-  const test = () => {
-    let i;
-    let n = 2;
-    [...Array(n)].map((elementInArray, index) => (
-      <div className="" key={i}>
-        {" "}
-        Whatever needs to be rendered repeatedly{" "}
-      </div>
-    ));
-  };
-
   useEffect(() => {
     const script = document.createElement("script");
     script.src =
@@ -62,6 +51,7 @@ const Blog = () => {
     script.async = true;
     document.body.appendChild(script);
   }, []);
+
   return (
     <section className="flex items-center justify-center min-w-full">
       <div className="flex flex-col w-full md:w-700 px-8">
