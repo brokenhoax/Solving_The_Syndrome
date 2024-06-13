@@ -1,6 +1,6 @@
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/blog/home";
-import Contact from "./pages/blog/contact";
+import About from "./pages/blog/about";
 import Blog from "./pages/blog/blog";
 import IKnowKungFoo from "./pages/blog/i-know-kung-fu";
 import FigmaSlider from "./pages/blog/figma-slider";
@@ -66,10 +66,10 @@ function App() {
               component={ReadySetGo}
             />
             <Route
-              path="/contact"
+              path="/about"
               exact={true}
-              className="contact"
-              component={Contact}
+              className="about"
+              component={About}
             />
             <Redirect from="*" to="/404" />
           </Switch>

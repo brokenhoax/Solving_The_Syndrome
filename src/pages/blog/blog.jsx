@@ -69,7 +69,7 @@ const Blog = () => {
             <li className="mb-2 w-full" key={index}>
               <Link
                 to={post.path}
-                className="text-2xl md:text-4xl font-semibold text-red-400 hover:text-white"
+                className="text-2xl md:text-4xl font-semibold text-gray-400 hover:text-white"
               >
                 {post.title}
               </Link>

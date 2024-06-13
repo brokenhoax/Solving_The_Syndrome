@@ -3,7 +3,7 @@ import "../../styles/scss/blog.scss";
 import "../../styles/app.css";
 import Footer from "../../components/common/footer";
 
-const Contact = () => {
+const About = () => {
   return (
     <section className="flex flex-col items-center justify-center mt-20">
       <div className="w-full md:w-700 px-8">
@@ -77,4 +77,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default About;
