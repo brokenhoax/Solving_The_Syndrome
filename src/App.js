@@ -6,7 +6,7 @@ import IKnowKungFoo from "./pages/blog/i-know-kung-fu";
 import FigmaSlider from "./pages/blog/figma-slider";
 import ReactComponents from "./pages/blog/react-components";
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Switch,
   Route,
   Redirect,
@@ -18,9 +18,9 @@ import ReadySetGo from "./pages/blog/ready-set-go";
 function App() {
   return (
     <Router>
-      <div className="wrapper h-screen text-gray-400 font-plex">
-        <Navbar className="navbar" />
-        <div className="">
+      <div className="relative wrapper h-screen text-gray-400 font-plex">
+        <Navbar/>
+        <div className="pt-16">
           <Switch>
             <Route path="/" exact={true} component={Blog} />
             <Route
@@ -30,11 +30,11 @@ function App() {
               component={Home}
             />
             {/* <Route
-            path="/login"
-            exact={true}
-            className="login"
-            component={Login}
-          /> */}
+              path="/login"
+              exact={true}
+              className="login"
+              component={Login}
+            /> */}
             <Route
               path="/blog"
               exact={true}

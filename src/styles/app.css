@@ -562,6 +562,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-32{
+  margin-bottom: 16rem; /* 128px */
+}
+
 .mt-4{
   margin-top: 1rem;
 }
@@ -891,6 +895,11 @@ video {
   padding-top: 0.5rem;
 }
 
+.pt-8{
+  padding-top: 2rem;
+}
+
+
 .pb-4{
   padding-bottom: 1rem;
 }
@@ -1113,4 +1122,20 @@ video {
   .lg\:text-2xl{
     font-size: 1.5rem;
   }
+}
+
+.fixed {
+  position: fixed;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.left-0 {
+  top: 0px;
+}
+
+.right-0 {
+  right: 0px;
 }

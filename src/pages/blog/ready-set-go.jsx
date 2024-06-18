@@ -12,6 +12,11 @@ const ReadySetGo = () => {
     script.async = true;
     document.body.appendChild(script);
   }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <section className="flex flex-col items-center leading-9 text-lg mt-20">
       <div className="w-full md:w-700 space-y-4 px-8">

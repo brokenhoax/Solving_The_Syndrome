@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../styles/scss/blog.scss";
 import "../../styles/app.css";
-import headshot from "../../assets/headshot.png";
+import headshot from "../../assets/headshot.jpg";
 
 const Blog = () => {
   const posts = [
@@ -52,30 +52,35 @@ const Blog = () => {
     document.body.appendChild(script);
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <section className="flex items-center justify-center min-w-full">
       <div className="flex flex-col w-full md:w-700 px-8">
         {/* Author Data */}
         <div className="flex items-center w-full pt-16 md:pt-20 pb-6">
-          <img src={headshot} className="rounded-full h-16" alt="Logo"></img>
+          <img src={headshot} className="rounded-full h-16 w-16" alt="Logo"></img>
           <div className="ml-4 font-semibold text-base">
             <div>Andrew Kraus</div>
             <div className="pb-0.5 text-red-400">@brokenhoax</div>
           </div>
         </div>
         {/* Posts */}
-        <ul className="flex flex-col items-start mt-4">
+        <ul className="flex flex-col items-start">
           {posts.map((post, index) => (
-            <li className="mb-2 w-full" key={index}>
+            <li className="mb-2 w-full pt-8" key={index}>
               <Link
                 to={post.path}
-                className="text-2xl md:text-4xl font-semibold text-gray-400 hover:text-white"
+                className="min-w-full text-2xl md:text-4xl font-semibold text-gray-400 hover:text-white"
               >
-                {post.title}
-              </Link>
-              <div className="leading-7">
+                {/* Title */}
+                <div>{post.title}</div>
                 <div className="flex items-center justify-between text-red-400 text-sm md:text-lg">
+                  {/* Tagline */}
                   <div>{post.tagline}</div>
+                  {/* Minutes */}
                   <div className="flex items-center">
                     <i className={`${post.icon} px-2 text-gray-400`}></i>
                     <p>{post.length.minutes} Minutes</p>
@@ -84,8 +89,8 @@ const Blog = () => {
                 <div className="text-sm text-gray-400 font-semibold">
                   {post.date}
                 </div>
-              </div>
-              <hr className="mt-4 border-b border-gray-200 border-dotted"></hr>
+              </Link>
+              <hr className="mt-8 border-b border-gray-700"></hr>
             </li>
           ))}
           <li></li>

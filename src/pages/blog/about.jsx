@@ -1,11 +1,17 @@
-import headshot from "../../assets/headshot.png";
+import React, { useEffect } from "react";
+import headshot from "../../assets/headshot.jpg";
 import "../../styles/scss/blog.scss";
 import "../../styles/app.css";
 import Footer from "../../components/common/footer";
 
 const About = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
-    <section className="flex flex-col items-center justify-center mt-20">
+    <section className="flex flex-col items-center justify-center mt-20 overflow-hidden">
       <div className="w-full md:w-700 px-8">
         <h1 className="self-center text-5xl font-bold mb-2">About Me</h1>
         <h2 className="italic text-red-400">June 5th, 2022</h2>
@@ -51,7 +57,7 @@ const About = () => {
           presents itself, I’m all ears.
         </p>
         <div className="inline-flex items-center w-full pb-6">
-          <img src={headshot} className="rounded-full h-16" alt="Logo"></img>
+          <img src={headshot} className="rounded-full h-16 w-16" alt="Logo"></img>
           {/* Contact Details */}
           <div className="ml-4 font-semibold text-base">
             <div className="flex flex-col">
