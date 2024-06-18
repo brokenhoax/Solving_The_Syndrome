@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Solving_The_Syndrome/static/css/main.db2b91a5.chunk.css",
-    "main.js": "/Solving_The_Syndrome/static/js/main.49cb218e.chunk.js",
-    "main.js.map": "/Solving_The_Syndrome/static/js/main.49cb218e.chunk.js.map",
-    "runtime-main.js": "/Solving_The_Syndrome/static/js/runtime-main.b2267ca2.js",
-    "runtime-main.js.map": "/Solving_The_Syndrome/static/js/runtime-main.b2267ca2.js.map",
-    "static/js/2.14fa4e0f.chunk.js": "/Solving_The_Syndrome/static/js/2.14fa4e0f.chunk.js",
-    "static/js/2.14fa4e0f.chunk.js.map": "/Solving_The_Syndrome/static/js/2.14fa4e0f.chunk.js.map",
-    "static/js/3.2ff1686d.chunk.js": "/Solving_The_Syndrome/static/js/3.2ff1686d.chunk.js",
-    "static/js/3.2ff1686d.chunk.js.map": "/Solving_The_Syndrome/static/js/3.2ff1686d.chunk.js.map",
+    "main.css": "/Solving_The_Syndrome/static/css/main.1475e3c9.chunk.css",
+    "main.js": "/Solving_The_Syndrome/static/js/main.4dd29bfe.chunk.js",
+    "main.js.map": "/Solving_The_Syndrome/static/js/main.4dd29bfe.chunk.js.map",
+    "runtime-main.js": "/Solving_The_Syndrome/static/js/runtime-main.fd2bff9e.js",
+    "runtime-main.js.map": "/Solving_The_Syndrome/static/js/runtime-main.fd2bff9e.js.map",
+    "static/js/2.cd7a41bf.chunk.js": "/Solving_The_Syndrome/static/js/2.cd7a41bf.chunk.js",
+    "static/js/2.cd7a41bf.chunk.js.map": "/Solving_The_Syndrome/static/js/2.cd7a41bf.chunk.js.map",
+    "static/js/3.e410763b.chunk.js": "/Solving_The_Syndrome/static/js/3.e410763b.chunk.js",
+    "static/js/3.e410763b.chunk.js.map": "/Solving_The_Syndrome/static/js/3.e410763b.chunk.js.map",
     "index.html": "/Solving_The_Syndrome/index.html",
-    "static/css/main.db2b91a5.chunk.css.map": "/Solving_The_Syndrome/static/css/main.db2b91a5.chunk.css.map",
-    "static/js/2.14fa4e0f.chunk.js.LICENSE.txt": "/Solving_The_Syndrome/static/js/2.14fa4e0f.chunk.js.LICENSE.txt",
+    "static/css/main.1475e3c9.chunk.css.map": "/Solving_The_Syndrome/static/css/main.1475e3c9.chunk.css.map",
+    "static/js/2.cd7a41bf.chunk.js.LICENSE.txt": "/Solving_The_Syndrome/static/js/2.cd7a41bf.chunk.js.LICENSE.txt",
     "static/media/banana.jpg": "/Solving_The_Syndrome/static/media/banana.77ff416c.jpg",
     "static/media/code.jpg": "/Solving_The_Syndrome/static/media/code.b071a8a1.jpg",
     "static/media/constraints.png": "/Solving_The_Syndrome/static/media/constraints.f6cc0de4.png",
@@ -20,7 +20,7 @@
     "static/media/constraints_zero.png": "/Solving_The_Syndrome/static/media/constraints_zero.aa65ef50.png",
     "static/media/graph.jpg": "/Solving_The_Syndrome/static/media/graph.e21dccb6.jpg",
     "static/media/grid.jpg": "/Solving_The_Syndrome/static/media/grid.d47fe448.jpg",
-    "static/media/headshot.14aff8b9.png": "/Solving_The_Syndrome/static/media/headshot.14aff8b9.png",
+    "static/media/headshot.70f9c8ef.jpg": "/Solving_The_Syndrome/static/media/headshot.70f9c8ef.jpg",
     "static/media/interactions.png": "/Solving_The_Syndrome/static/media/interactions.00be2766.png",
     "static/media/kung-foo.jpg": "/Solving_The_Syndrome/static/media/kung-foo.6fad6739.jpg",
     "static/media/logo.cf31c386.png": "/Solving_The_Syndrome/static/media/logo.cf31c386.png",
@@ -34,9 +34,9 @@
     "static/media/tired.jpg": "/Solving_The_Syndrome/static/media/tired.1a9b062b.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b2267ca2.js",
-    "static/js/2.14fa4e0f.chunk.js",
-    "static/css/main.db2b91a5.chunk.css",
-    "static/js/main.49cb218e.chunk.js"
+    "static/js/runtime-main.fd2bff9e.js",
+    "static/js/2.cd7a41bf.chunk.js",
+    "static/css/main.1475e3c9.chunk.css",
+    "static/js/main.4dd29bfe.chunk.js"
   ]
 }
