@@ -23,6 +23,7 @@ function App() {
         <div className="pt-16">
           <Switch>
             <Route path="/" exact={true} component={Blog} />
+            <Route path="/Solving_The_Syndrome" exact={true} component={Blog} />
             <Route
               path="/home"
               exact={true}
