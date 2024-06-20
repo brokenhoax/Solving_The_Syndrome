@@ -2,6 +2,7 @@ import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/blog/home";
 import About from "./pages/blog/about";
 import Blog from "./pages/blog/blog";
+import DarkMode from "./pages/blog/dark-mode";
 import IKnowKungFoo from "./pages/blog/i-know-kung-fu";
 import FigmaSlider from "./pages/blog/figma-slider";
 import ReactComponents from "./pages/blog/react-components";
@@ -18,7 +19,7 @@ import ReadySetGo from "./pages/blog/ready-set-go";
 function App() {
   return (
     <Router>
-      <div className="relative wrapper h-screen text-gray-400 font-plex">
+      <div id="wrapper" className="styled-scrollbars relative h-screen">
         <Navbar/>
         <div className="pt-16">
           <Switch>
@@ -53,6 +54,12 @@ function App() {
               exact={true}
               className="blog"
               component={ReactComponents}
+            />
+            <Route
+              path="/blog/dark-mode"
+              exact={true}
+              className="blog"
+              component={DarkMode}
             />
             <Route
               path="/blog/react-components"

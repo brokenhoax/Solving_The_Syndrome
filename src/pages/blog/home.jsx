@@ -55,7 +55,7 @@ const lastFeatured = featured.pop();
 export default function Home() {
   return (
     <main>
-      <section className="container font-plex">
+      <section className="container">
         <div>
           <section className="flex flex-col mt-24">
             <MasonryPost post={lastFeatured} tagsOnTop={true} columns={3} />
@@ -63,7 +63,7 @@ export default function Home() {
           </section>
         </div>
       </section>
-      <section className="container font-plex">
+      <section className="container">
         <div>
           <section className=" ">
             <PostGrid posts={recentPosts} />

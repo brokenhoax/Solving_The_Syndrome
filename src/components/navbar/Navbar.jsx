@@ -38,7 +38,7 @@ function Navbar() {
     return (
       <div className="min-w-full fixed top-0 left-0 right-0">
         <div className="flex justify-center bg-gray-900 text-gray-400 z-20">
-          <div className="w-full md:w-700 px-8">
+          <div className="w-full container px-8">
             <div className="flex justify-center items-center">
               {/* Left */}
               <div className="w-1/3">
@@ -84,9 +84,9 @@ function Navbar() {
 
   if (toggle) {
     return (
-      <div className="min-w-full fixed top-0 left-0 right-0 ">
+      <div className="min-w-full fixed top-0 left-0 right-0">
         <div className="flex justify-center bg-gray-900 text-gray-400 z-20">
-          <div className="flex justify-between items-center px-8 w-full md:w-700">
+          <div className="flex justify-start items-center px-8 container">
             {/* Logo & Title */}
             <button className="flex justify-start items-center w-full" onClick={setNavbarstatus}>
               <img className="h-8 my-4" src={logo} alt="Logo"></img>

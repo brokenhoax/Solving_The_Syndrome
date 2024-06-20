@@ -7,6 +7,18 @@ import headshot from "../../assets/headshot.jpg";
 const Blog = () => {
   const posts = [
     {
+      title: "Dark Mode",
+      date: "5-5-2021",
+      length: {
+        minutes: "5",
+        seconds: "00",
+      },
+      icon: "fas fa-mug-hot",
+      mugs: 1,
+      tagline: "Dark mode is stupid easy.",
+      path: "/blog/dark-mode",
+    },
+    {
       title: "React Components",
       date: "5-5-2021",
       length: {
@@ -57,10 +69,10 @@ const Blog = () => {
   }, [])
 
   return (
-    <section className="flex items-center justify-center min-w-full">
-      <div className="flex flex-col w-full md:w-700 px-8">
+    <section id="blog" className="flex justify-center items-center">
+      <div className="container flex flex-col px-8">
         {/* Author Data */}
-        <div className="flex items-center w-full pt-16 md:pt-20 pb-6">
+        <div className="flex items-center justify-start pt-16 md:pt-20 pb-6">
           <img src={headshot} className="rounded-full h-16 w-16" alt="Logo"></img>
           <div className="ml-4 font-semibold text-base">
             <div>Andrew Kraus</div>
@@ -73,20 +85,20 @@ const Blog = () => {
             <li className="mb-2 w-full pt-8" key={index}>
               <Link
                 to={post.path}
-                className="min-w-full text-2xl md:text-4xl font-semibold text-gray-400 hover:text-white"
+                className="min-w-full text-2xl md:text-4xl font-semibold hover:text-red-400"
               >
                 {/* Title */}
-                <div>{post.title}</div>
-                <div className="flex items-center justify-between text-red-400 text-sm md:text-lg">
+                <div className="font-bold">{post.title}</div>
+                <div className="flex items-center justify-between text-sm md:text-lg">
                   {/* Tagline */}
-                  <div>{post.tagline}</div>
+                  <div className="text-red-400">{post.tagline}</div>
                   {/* Minutes */}
-                  <div className="flex items-center">
-                    <i className={`${post.icon} px-2 text-gray-400`}></i>
+                  <div className="flex items-center ">
+                    <i className={`${post.icon} px-2`}></i>
                     <p>{post.length.minutes} Minutes</p>
                   </div>
                 </div>
-                <div className="text-sm text-gray-400 font-semibold">
+                <div className="text-sm font-semibold">
                   {post.date}
                 </div>
               </Link>

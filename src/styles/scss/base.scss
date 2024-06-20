@@ -1,16 +1,19 @@
 @import "./home.scss";
 
 html body {
-  background-color: $thm-dark-blue;
+  background-color: #efefef;
+  color: #242c3a;
+}
+
+@media (prefers-color-scheme: dark) {
+  html body {
+    background-color: #242c3a;
+    color: #efefef;
+  }
 }
 
 h1 {
   font-size: 2rem;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .row {
@@ -69,7 +72,6 @@ h1 {
 }
 
 // PrettyPrint Styles for Code Snippets
-
 pre.prettyprint {
   background-color: #1a202c;
   border-style: none;
@@ -84,4 +86,25 @@ pre.prettyprint {
 .no-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+// Prevent scrollbar from changing page width
+#wrapper {
+  overflow-y: overlay;
+}
+
+// Styled scrollbars
+.styled-scrollbars {
+  /* Foreground, Background */
+  scrollbar-color: $thm-orange $thm-dark-blue;
+}
+.styled-scrollbars::-webkit-scrollbar {
+  width: 10px; /* Mostly for vertical scrollbars */
+  height: 10px; /* Mostly for horizontal scrollbars */
+}
+.styled-scrollbars::-webkit-scrollbar-thumb { /* Foreground */
+  background: #df817c;
+}
+.styled-scrollbars::-webkit-scrollbar-track { /* Background */
+  background: #242c3a;
 }
