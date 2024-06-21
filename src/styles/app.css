@@ -558,6 +558,10 @@ video {
   margin-top: 8rem;
 }
 
+.mt-64{
+  margin-top: 10rem;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -867,6 +871,10 @@ video {
   padding-top: 4rem;
 }
 
+.pt-32{
+  padding-top: 8rem;
+}
+
 .pb-6{
   padding-bottom: 1.5rem;
 }
@@ -889,6 +897,10 @@ video {
 
 .pl-1{
   padding-left: 0.25rem;
+}
+
+.pr-2 {
+  padding-right: .5rem
 }
 
 .pt-2{
@@ -1126,6 +1138,10 @@ video {
 
 .fixed {
   position: fixed;
+}
+
+.sticky {
+  position: sticky;
 }
 
 .top-0 {

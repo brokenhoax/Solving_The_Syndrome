@@ -18,12 +18,12 @@ const ReadySetGo = () => {
   }, [])
 
   return (
-    <section className="flex flex-col items-center leading-9 text-lg mt-20">
+    <section className="flex flex-col items-center leading-9 text-lg pt-20">
       <div className="w-full md:w-700 space-y-4 px-8">
-        <h1 className="self-center text-5xl font-bold">Ready Set Go</h1>
+        <h1 id="top" className="self-center text-5xl font-bold">Ready Set Go</h1>
         <p className="italic text-red-400">June 8th, 2022</p>
-        <div className="block border-b border-gray-700"></div>
-        <p className="text-2xl leading-10 mt-12 italic">
+        <div className="border-b-2 border-red-400"></div>
+        <p className="text-2xl leading-10 mt-12">
           So, you've dabbled with{" "}
           <span>
             <a
@@ -36,43 +36,46 @@ const ReadySetGo = () => {
           and you're ready to build something useful and share it with the
           world. Now what? This post will walk through the following steps:
         </p>
-        <ol className="list-decimal pt-2 pb-4 pl-8 font-medium space-y-2 text-xl  text-gray-600">
+        <ol className="list-decimal pt-2 pb-4 pl-8 font-normal text-red-400 space-y-2 text-xl">
           <li>
-            <HashLink to="/blog/ready-set-go#register">
+            <HashLink scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center' })} to="/blog/ready-set-go#register">
               Setting up an account on GitHub
             </HashLink>
           </li>
           <li>
-            <HashLink to="/blog/ready-set-go#create">
+            <HashLink scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center' })} to="/blog/ready-set-go#create" >
               Creating a GitHub repository
-            </HashLink>
+            </HashLink >
           </li>
           <li>
-            <HashLink to="/blog/ready-set-go#clone">
+            <HashLink scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center' })} to="/blog/ready-set-go#clone">
               Cloning your Github repository
             </HashLink>
           </li>
           <li>
-            <HashLink to="/blog/ready-set-go#push">
+            <HashLink scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center' })} to="/blog/ready-set-go#push">
               Pushing your changes to Github
             </HashLink>
           </li>
           <li>
-            <HashLink to="/blog/ready-set-go#build">
+            <HashLink scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center' })} to="/blog/ready-set-go#build">
               Creating a production build
             </HashLink>
           </li>
           <li>
             {" "}
-            <HashLink to="/blog/ready-set-go#deploy">
+            <HashLink scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center' })} to="/blog/ready-set-go#deploy">
               Deploying your production build to Github Pages
             </HashLink>
           </li>
         </ol>
-        <div className="block border-b border-gray-700"></div>
-        <h2 id="register" className="text-3xl pt-2 font-semibold">
-          Setting up an account on Github
-        </h2>
+        <div className="border-b-2 border-red-400"></div>
+        <div className="flex items-center justify-start text-3xl">
+          <h2 id="register" className="text-3xl pt-2 font-semibold">
+            Setting up an account on Github
+          </h2>
+          <HashLink smooth to="#top"><span className="text-3xl pl-2 text-red-400">#</span></HashLink>
+        </div>
         <p>
           You need a place to store your code and Github is pretty much the
           defacto code repo on the web. Let's sign up at{""}
@@ -81,9 +84,12 @@ const ReadySetGo = () => {
           </span>
           and follow the prompts to set up an account.
         </p>
-        <h2 id="create" className="text-3xl pt-2 font-semibold">
-          Creating a GitHub repository
-        </h2>
+        <div className="flex items-center justify-start text-3xl">
+          <h2 id="create" className="pt-2 font-semibold">
+            Creating a GitHub repository
+          </h2>
+          <HashLink smooth to="#top"><span className="text-3xl pl-2 text-red-400">#</span></HashLink>
+        </div>
         <p>
           There should be a green button on your GitHub homepage labeled "New".
           Click it to create a new repository or
@@ -93,9 +99,12 @@ const ReadySetGo = () => {
           to save a few keyboard strokes. Give your repository a name and set it
           to "public". No need to bother with any of the other settings for now.
         </p>
-        <h2 id="clone" className="text-3xl pt-2 font-semibold">
-          Cloning your GitHub repository
-        </h2>
+        <div className="flex items-center justify-start text-3xl">
+          <h2 id="clone" className="text-3xl pt-2 font-semibold">
+            Cloning your GitHub repository
+          </h2>
+          <HashLink smooth to="#top"><span className="text-3xl pl-2 text-red-400">#</span></HashLink>
+        </div>
         <p>
           You'll want to save your app to your computer and sync it to GitHub.
           So, we'll create a folder for our app and we'll clone our GitHub
@@ -110,9 +119,12 @@ const ReadySetGo = () => {
     git clone <your-git-repository>
           `}
         </pre>
-        <h2 id="push" className="text-3xl pt-2 font-semibold">
-          Make and push your changes to Github
-        </h2>
+        <div className="flex items-center justify-start text-3xl">
+          <h2 id="push" className="text-3xl pt-2 font-semibold">
+            Make and push your changes to Github
+          </h2>
+          <HashLink smooth to="#top"><span className="text-3xl pl-2 text-red-400">#</span></HashLink>
+        </div>
         <p>
           Refer to the{" "}
           <a
@@ -136,9 +148,12 @@ const ReadySetGo = () => {
   git push
           `}
         </pre>
-        <h2 id="build" className="text-3xl pt-2 font-semibold">
-          Creating a production build
-        </h2>
+        <div className="flex items-center justify-start text-3xl">
+          <h2 id="build" className="text-3xl pt-2 font-semibold">
+            Creating a production build
+          </h2>
+          <HashLink smooth to="#top"><span className="text-3xl pl-2 text-red-400">#</span></HashLink>
+        </div>
         <p>
           The production build is an web optimized version of our app. This is
           the version we'll post to GitHub pages. Production builds improve load
@@ -151,9 +166,12 @@ const ReadySetGo = () => {
   npm run build
           `}
         </pre>
-        <h2 id="deploy" className="text-3xl pt-2 font-semibold">
-          Deploying your build to Github Pages
-        </h2>
+        <div className="flex items-center justify-start text-3xl">
+          <h2 id="deploy" className="text-3xl pt-2 font-semibold">
+            Deploying your build to Github Pages
+          </h2>
+          <HashLink smooth to="#top"><span className="text-3xl pl-2 text-red-400">#</span></HashLink>
+        </div>
         <p>
           Deploy your app to GitHub pages and check your published site to
           confirm your changes!

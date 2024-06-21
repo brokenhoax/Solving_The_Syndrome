@@ -20,7 +20,7 @@ function App() {
   return (
     <Router>
       <div id="wrapper" className="styled-scrollbars relative h-screen">
-        <Navbar/>
+      <Navbar/>
         <div className="pt-16">
           <Switch>
             <Route path="/" exact={true} component={Blog} />
@@ -46,31 +46,31 @@ function App() {
             <Route
               path="/blog/figma-slider"
               exact={true}
-              className="slider"
+              className="figma-slider"
               component={FigmaSlider}
             />
             <Route
               path="/blog/react-components"
               exact={true}
-              className="blog"
+              className="react-components"
               component={ReactComponents}
             />
             <Route
               path="/blog/dark-mode"
               exact={true}
-              className="blog"
+              className="dark-mode"
               component={DarkMode}
             />
             <Route
-              path="/blog/react-components"
+              path="/blog/i-know-kung-fu"
               exact={true}
-              className="blog"
+              className="i-know-kung-fu"
               component={IKnowKungFoo}
             />
             <Route
               path="/blog/ready-set-go"
               exact={true}
-              className="blog"
+              className="ready-set-go"
               component={ReadySetGo}
             />
             <Route
