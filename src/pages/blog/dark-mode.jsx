@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../../styles/scss/blog.scss";
 import "../../styles/app.css";
-import kungfoo from "../../assets/images/kung-foo.jpg";
 
 const DarkMode = () => {
   return (

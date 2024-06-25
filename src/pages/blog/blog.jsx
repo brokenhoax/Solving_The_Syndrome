@@ -72,7 +72,7 @@ const Blog = () => {
     <section id="blog" className="flex justify-center items-center">
       <div className="container flex flex-col px-8">
         {/* Author Data */}
-        <div className="flex items-center justify-start pt-16 md:pt-20 pb-6">
+        <div className="flex items-center justify-start pt-12 pb-6">
           <img src={headshot} className="rounded-full h-16 w-16" alt="Logo"></img>
           <div className="ml-4 font-semibold text-base">
             <div>Andrew Kraus</div>
@@ -93,9 +93,9 @@ const Blog = () => {
                   {/* Tagline */}
                   <div className="text-red-400">{post.tagline}</div>
                   {/* Minutes */}
-                  <div className="flex items-center ">
+                  <div className="flex items-center">
                     <i className={`${post.icon} px-2`}></i>
-                    <p>{post.length.minutes} Minutes</p>
+                    <p>{post.length.minutes} mins</p>
                   </div>
                 </div>
                 <div className="text-sm font-semibold">

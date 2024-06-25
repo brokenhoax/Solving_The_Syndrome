@@ -19,9 +19,9 @@ import ReadySetGo from "./pages/blog/ready-set-go";
 function App() {
   return (
     <Router>
-      <div id="wrapper" className="styled-scrollbars relative h-screen">
-      <Navbar/>
-        <div className="pt-16">
+      <div className="relative h-screen">
+        <Navbar/>
+        <div>
           <Switch>
             <Route path="/" exact={true} component={Blog} />
             <Route path="/Solving_The_Syndrome" exact={true} component={Blog} />

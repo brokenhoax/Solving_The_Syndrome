@@ -11,11 +11,11 @@ const About = () => {
   }, [])
 
   return (
-    <section className="flex flex-col items-center justify-center mt-20 overflow-hidden">
+    <section className="flex flex-col items-center justify-center mt-20">
       <div className="w-full md:w-700 px-8">
-        <h1 className="self-center text-5xl font-bold mb-2">About Me</h1>
+        <h1 className="self-center text-3xl md:text-5xl font-bold mb-2">About Me</h1>
         <h2 className="italic text-red-400">June 5th, 2022</h2>
-        <p className="text-xl my-8 leading-10">
+        <p className="md:text-xl my-8 leading-8">
           In my professional experience, understanding the big picture (the
           intersection of business, people, and technology) requires a good mix
           of hard and soft skills and a lot of practice. Fifteen years into my
@@ -28,7 +28,7 @@ const About = () => {
           satisfaction I get from helping others, and, of course, my love of
           technology!
         </p>
-        <p className="text-xl my-8 leading-10">
+        <p className="md:text-xl my-8 leading-10">
           More recently (in 2019), while working for IBM Security, I embarked on
           a 6-month Web Development bootcamp with Northwestern University. Truth
           be told, I had originally enrolled in their cybersecurity bootcamp so
@@ -36,7 +36,7 @@ const About = () => {
           thought, “before you know how to break an app, it couldn’t hurt to
           know how to build one”. I took a chance, signed up, and was hooked.
         </p>
-        <p className="text-xl my-8 leading-10">
+        <p className="md:text-xl my-8 leading-10">
           Gaining developer experience was a game changer. At 36 years old, and
           on the verge of starting a family, I had difficult decision to make. I
           could continue my established path with IBM Security, accept an offer
@@ -47,7 +47,7 @@ const About = () => {
           professional software engineer eventually leading Convr’s front-end
           developer team.
         </p>
-        <p className="text-xl my-8 leading-10">
+        <p className="md:text-xl my-8 leading-10">
           While I’m extremely proud of and thankful for my experience at Convr,
           I’m excited to take on new experiences. I’m interested in working
           different technologies (e.g., other JavaScript frameworks like React

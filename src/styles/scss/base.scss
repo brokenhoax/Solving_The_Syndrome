@@ -3,6 +3,7 @@
 html body {
   background-color: #efefef;
   color: #242c3a;
+  overflow-y: scroll;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -73,7 +74,7 @@ h1 {
 
 // PrettyPrint Styles for Code Snippets
 pre.prettyprint {
-  background-color: #1a202c;
+  background-color: #2d3748;
   border-style: none;
 }
 
@@ -96,7 +97,7 @@ pre.prettyprint {
 // Styled scrollbars
 .styled-scrollbars {
   /* Foreground, Background */
-  scrollbar-color: $thm-orange $thm-dark-blue;
+  scrollbar-color: $thm-dark-blue $thm-orange;
 }
 .styled-scrollbars::-webkit-scrollbar {
   width: 10px; /* Mostly for vertical scrollbars */
@@ -107,4 +108,57 @@ pre.prettyprint {
 }
 .styled-scrollbars::-webkit-scrollbar-track { /* Background */
   background: #242c3a;
+}
+
+
+// Toggle
+
+.toggle-btn {
+  background-color: #fc8181;
+  border: 2px solid #1a202c;
+  border-radius: 99px;
+  position: relative;
+  border-radius: 2rem;
+  width: 50px;
+  height: 28px;
+  cursor: pointer;
+  transition: background-color 0.1s ease, border-color 0.2s ease;
+}
+
+.toggle-btn .thumb {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 99px;
+  // transform: translateX(0);
+  transition: left 0.15s ease;
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+  
+}
+
+.toggle-btn.toggled {
+  background-color: #2d3748;
+}
+
+.toggle-btn:hover {
+  border-color: #1a202c;
+  opacity: 90%;
+}
+
+.toggle-btn.toggled .thumb {
+  left: calc(50px - 26px)
+}
+
+// Dark Mode
+.dark-mode {
+  background-color:#1a202c;
+  color: #f7fafc;
+}
+
+.light-mode {
+  background-color: #f7fafc;
+  color: #2d3748;
 }

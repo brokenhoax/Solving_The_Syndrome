@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../../styles/app.css";
 import "../../styles/scss/base.scss";
 import logo from "../../assets/logo.png";
+import Toggle from "../../components/common/toggle";
 
 function Navbar() {
   const [toggle, setNavvy] = useState(false);
@@ -36,46 +37,44 @@ function Navbar() {
 
   if (!toggle) {
     return (
-      <div className="min-w-full">
-        <div className="flex justify-center bg-gray-900 text-gray-400">
-          <div className="w-full container px-8">
-            <div className="flex justify-center items-center">
-              {/* Left */}
-              <div className="w-1/3">
-              <button className="flex justify-start items-center w-full" onClick={setNavbarstatus}>
-                    <img className="h-8 my-4" src={logo} alt="Logo"></img>
+      <div className="flex items-center justify-center bg-gray-900 text-white text-sm h-16 border-b-1 border-red-400">
+        <div className="flex justify-between items-center px-8 py-4 container md:w-700">
+          {/* Left */}
+          <div className="flex items-center">
+
+            <div className="flex justify-end items-center">
+              {setNavvy && (
+                <ul className="flex font-semibold space-x-2">
+                  <button onClick={setNavbarstatus}>
+                    <img className="w-8 h-8" src={logo} alt="Logo"></img>
                   </button>
-              </div>
-              {/* Middle */}
-              <div className="w-1/3 text-center font-bold px-4 md:text-xl lg:text-2xl"></div>
-              {/* Right */}
-              <div className="w-1/3 flex justify-end items-stretch">
-                {setNavvy && (
-                  <ul className="flex font-semibold bg-gray-900">
-                    {navLinks.map((link, index) => (
-                      <li className="px-6 my-auto" key={index}>
-                        {setNavvy === link.path && (
-                          <Link
-                            to={link.path}
-                            className="h-full focus:outline-none border-b-2 border-transparent border-opacity-100 border-red-400"
-                          >
-                            {link.title}
-                          </Link>
-                        )}
-                        {setNavvy !== link.path && (
-                          <Link
-                            to={link.path}
-                            className="focus:outline-none border-opacity-0 border-b-2 border-transparent hover:border-opacity-100 hover:border-b-2 hover:border-red-400 focus:border-red-400 focus:border-opacity-100 focus:border-b-2 active:border-opacity-100 active:border-b-2 active:border-red-400"
-                          >
-                            {link.title}
-                          </Link>
-                        )}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
+                  {navLinks.map((link, index) => (
+                    <li className="flex items-center justify-between my-auto" key={index}>
+                      {setNavvy === link.path && (
+                        <Link
+                          to={link.path}
+                          className="bg-gray-700 hover:bg-gray-800 rounded-lg text-white px-4 py-2 font-semibold"
+                        >
+                          {link.title}
+                        </Link>
+                      )}
+                      {setNavvy !== link.path && (
+                        <Link
+                          to={link.path}
+                          className="bg-gray-700 hover:bg-gray-800 rounded-lg text-white px-4 py-2 font-semibold"
+                        >
+                          {link.title}
+                        </Link>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
+          </div>
+          {/* Right */}
+          <div className="pl-8">
+            <Toggle />
           </div>
         </div>
       </div>
@@ -84,13 +83,17 @@ function Navbar() {
 
   if (toggle) {
     return (
-      <div className="min-w-full">
-        <div className="flex justify-center bg-gray-900 text-gray-400">
-          <div className="flex justify-start items-center px-8 container">
-            {/* Logo & Title */}
-            <button className="flex justify-start items-center w-full" onClick={setNavbarstatus}>
-              <img className="h-8 my-4" src={logo} alt="Logo"></img>
-            </button>
+      <div className="flex flex-col items-center bg-gray-900 text-white text-sm h-16">
+        <div className="flex justify-between items-center px-8 py-4 container md:w-700">
+          {/* Left */}
+          <button onClick={setNavbarstatus} className="w-8 h-8 text-center">
+            <img src={logo} alt="Logo"></img>
+          </button>
+          {/* Right */}
+          <div className="flex justify-end items-center">
+            <div className="pl-8">
+              <Toggle />
+            </div>
           </div>
         </div>
       </div>

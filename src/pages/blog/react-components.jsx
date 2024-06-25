@@ -15,8 +15,15 @@ const IKnowKungFoo = () => {
   return (
     <section className="flex flex-col items-center mt-20">
       <div className="w-full md:w-700 px-8">
+        
         <h1 className="self-center text-5xl font-bold mb-2">I Know Kung Foo</h1>
         <h2 className="italic text-red-400">March 5th, 2021</h2>
+        <div className="flex flex-col items-center pt-8">
+          <img
+            src={kungfoo}
+            alt="Application"
+          ></img>
+        </div>
         <p className="text-xl my-8 leading-10 mt-12">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eum
           voluptatem commodi. Assumenda voluptatum autem explicabo, cupiditate
@@ -25,13 +32,6 @@ const IKnowKungFoo = () => {
           sapiente obcaecati? Alias laboriosam cupiditate sint mollitia aliquam?
           Qui ipsa inventore ex reiciendis.
         </p>
-        <div className="flex flex-col items-center">
-          <img
-            src={kungfoo}
-            alt="Application"
-            className="w-3/5 rounded-lg"
-          ></img>
-        </div>
         <p className="text-xl my-8 leading-10">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vitae
           deleniti nemo corporis magnam provident voluptas aspernatur laborum
