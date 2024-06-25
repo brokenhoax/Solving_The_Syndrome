@@ -37,14 +37,14 @@ function Navbar() {
 
   if (!toggle) {
     return (
-      <div className="flex items-center justify-center bg-gray-900 text-white text-sm h-16 border-b-1 border-red-400">
+      <div className="flex items-center justify-center bg-gray-900 text-white h-16 border-b-1 border-red-400">
         <div className="flex justify-between items-center px-8 py-4 container md:w-700">
           {/* Left */}
           <div className="flex items-center">
 
             <div className="flex justify-end items-center">
               {setNavvy && (
-                <ul className="flex font-semibold space-x-2">
+                <ul className="flex font-semibold space-x-4">
                   <button onClick={setNavbarstatus}>
                     <img className="w-8 h-8" src={logo} alt="Logo"></img>
                   </button>
@@ -53,7 +53,7 @@ function Navbar() {
                       {setNavvy === link.path && (
                         <Link
                           to={link.path}
-                          className="bg-gray-700 hover:bg-gray-800 rounded-lg text-white px-4 py-2 font-semibold"
+                          className="bg-gray-900 hover:bg-gray-800 rounded-lg text-gray-200 px-3 py-2 font-semibold focus:bg-gray-800"
                         >
                           {link.title}
                         </Link>
@@ -61,7 +61,7 @@ function Navbar() {
                       {setNavvy !== link.path && (
                         <Link
                           to={link.path}
-                          className="bg-gray-700 hover:bg-gray-800 rounded-lg text-white px-4 py-2 font-semibold"
+                          className="bg-gray-900 hover:bg-gray-800 rounded-lg text-gray-200 px-3 py-2 font-semibold focus:bg-gray-800"
                         >
                           {link.title}
                         </Link>

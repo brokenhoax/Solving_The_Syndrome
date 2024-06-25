@@ -112,7 +112,6 @@ pre.prettyprint {
 
 
 // Toggle
-
 .toggle-btn {
   background-color: #fc8181;
   border: 2px solid #1a202c;
@@ -136,7 +135,6 @@ pre.prettyprint {
   top: 50%;
   left: 2px;
   transform: translateY(-50%);
-  
 }
 
 .toggle-btn.toggled {
@@ -155,10 +153,10 @@ pre.prettyprint {
 // Dark Mode
 .dark-mode {
   background-color:#1a202c;
-  color: #f7fafc;
+  color: #edf2f7;
 }
 
 .light-mode {
-  background-color: #f7fafc;
+  background-color: #edf2f7;
   color: #2d3748;
 }
