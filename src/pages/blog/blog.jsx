@@ -69,10 +69,10 @@ const Blog = () => {
   }, [])
 
   return (
-    <section id="blog" className="flex justify-center items-center">
+    <section id="blog" className="flex justify-center items-center mt-20">
       <div className="container flex flex-col px-8">
         {/* Author Data */}
-        <div className="flex items-center justify-start pt-12 pb-6">
+        <div className="flex items-center justify-start pb-6">
           <img src={headshot} className="rounded-full h-16 w-16" alt="Logo"></img>
           <div className="ml-4 font-semibold text-base">
             <div>Andrew Kraus</div>

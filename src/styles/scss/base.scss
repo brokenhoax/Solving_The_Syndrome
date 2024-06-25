@@ -159,3 +159,17 @@ pre.prettyprint {
   background-color: #edf2f7;
   color: #2d3748;
 }
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+}

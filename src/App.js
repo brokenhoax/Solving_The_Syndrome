@@ -21,7 +21,6 @@ function App() {
     <Router>
       <div className="relative h-screen">
         <Navbar/>
-        <div>
           <Switch>
             <Route path="/" exact={true} component={Blog} />
             <Route path="/Solving_The_Syndrome" exact={true} component={Blog} />
@@ -81,7 +80,6 @@ function App() {
             />
             <Redirect from="*" to="/404" />
           </Switch>
-        </div>
       </div>
     </Router>
   );

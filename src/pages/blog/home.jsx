@@ -57,7 +57,7 @@ export default function Home() {
     <main>
       <section className="container">
         <div>
-          <section className="flex flex-col mt-24">
+          <section className="flex flex-col mt-20">
             <MasonryPost post={lastFeatured} tagsOnTop={true} columns={3} />
             <PostMasonry posts={featured} tagsOnTop={true} columns={3} />
           </section>

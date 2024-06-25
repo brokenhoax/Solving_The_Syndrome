@@ -4,9 +4,9 @@ import "../../styles/app.css";
 
 const DarkMode = () => {
   return (
-    <section className="flex flex-col items-center mt-8">
-      <div className="w-1/3">
-        <h1 className="self-center text-5xl font-bold mt-24 mb-2">
+    <section className="flex flex-col items-center mt-20">
+      <div className="w-full md:w-700 px-8">
+        <h1 className="self-center text-5xl font-bold mb-2">
           Dark Mode is Stupid Easy
         </h1>
         <h2 className="italic text-red-400">June 20th, 2024</h2>
