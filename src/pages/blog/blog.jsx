@@ -102,7 +102,7 @@ const Blog = () => {
                   {post.date}
                 </div>
               </Link>
-              <hr className="mt-8 border-b border-gray-700"></hr>
+              <hr className="mt-8 border-b border-gray-800"></hr>
             </li>
           ))}
           <li></li>

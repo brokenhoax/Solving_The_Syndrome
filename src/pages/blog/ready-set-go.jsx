@@ -36,7 +36,7 @@ const ReadySetGo = () => {
           and you're ready to build something useful and share it with the
           world. Now what? This post will walk through the following steps:
         </p>
-        <ol className="list-decimal pt-2 pb-4 pl-8 font-normal text-red-400 space-y-2 md:text-xl">
+        <ol className="list-decimal pt-2 pb-4 pl-8 font-medium space-y-2 md:text-xl">
           <li>
             <HashLink scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center' })} to="/blog/ready-set-go#register">
               Setting up an account on GitHub
@@ -73,8 +73,10 @@ const ReadySetGo = () => {
         <div className="flex items-center justify-start">
           <h2 id="register" className="text-xl md:text-3xl pt-2 font-semibold">
             Setting up an account on Github
+            <span>
+            <HashLink smooth to="#top"><span className="text-xl md:text-3xl pl-2 text-red-400">#</span></HashLink>
+          </span>
           </h2>
-          <HashLink smooth to="#top"><span className="text-xl md:text-3xl pl-2 text-red-400">#</span></HashLink>
         </div>
         <p>
           You need a place to store your code and Github is pretty much the
@@ -87,8 +89,8 @@ const ReadySetGo = () => {
         <div className="flex items-center justify-start">
           <h2 id="create" className="text-xl md:text-3xl pt-2 font-semibold">
             Creating a GitHub repository
+            <HashLink smooth to="#top"><span className="text-xl md:text-3xl pl-2 text-red-400">#</span></HashLink>
           </h2>
-          <HashLink smooth to="#top"><span className="text-xl md:text-3xl pl-2 text-red-400">#</span></HashLink>
         </div>
         <p>
           There should be a green button on your GitHub homepage labeled "New".
@@ -102,8 +104,8 @@ const ReadySetGo = () => {
         <div className="flex items-center justify-start">
           <h2 id="clone" className="text-xl md:text-3xl pt-2 font-semibold">
             Cloning your GitHub repository
+            <HashLink smooth to="#top"><span className="text-xl md:text-3xl pl-2 text-red-400">#</span></HashLink>
           </h2>
-          <HashLink smooth to="#top"><span className="text-xl md:text-3xl pl-2 text-red-400">#</span></HashLink>
         </div>
         <p>
           You'll want to save your app to your computer and sync it to GitHub.
@@ -121,9 +123,9 @@ const ReadySetGo = () => {
         </pre>
         <div className="flex items-center justify-start">
           <h2 id="push" className="text-xl md:text-3xl pt-2 font-semibold">
-            Make and push your changes to Github
+            Pushing your changes to Github
+            <HashLink smooth to="#top"><span className="text-xl md:text-3xl pl-2 text-red-400">#</span></HashLink>
           </h2>
-          <HashLink smooth to="#top"><span className="text-xl md:text-3xl pl-2 text-red-400">#</span></HashLink>
         </div>
         <p>
           Refer to the{" "}
@@ -151,8 +153,8 @@ const ReadySetGo = () => {
         <div className="flex items-center justify-start">
           <h2 id="build" className="text-xl md:text-3xl pt-2 font-semibold">
             Creating a production build
+            <HashLink smooth to="#top"><span className="text-xl md:text-3xl pl-2 text-red-400">#</span></HashLink>
           </h2>
-          <HashLink smooth to="#top"><span className="text-xl md:text-3xl pl-2 text-red-400">#</span></HashLink>
         </div>
         <p>
           The production build is an web optimized version of our app. This is
@@ -169,8 +171,8 @@ const ReadySetGo = () => {
         <div className="flex items-center justify-start">
           <h2 id="deploy" className="text-xl md:text-3xl pt-2 font-semibold">
             Deploying your build to Github Pages
+            <HashLink smooth to="#top"><span className="text-xl md:text-3xl pl-2 text-red-400">#</span></HashLink>
           </h2>
-          <HashLink smooth to="#top"><span className="text-xl md:text-3xl pl-2 text-red-400">#</span></HashLink>
         </div>
         <p>
           Deploy your app to GitHub pages and check your published site to
