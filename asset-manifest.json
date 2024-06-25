@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Solving_The_Syndrome/static/css/main.b18ae138.chunk.css",
-    "main.js": "/Solving_The_Syndrome/static/js/main.cf6e6cb6.chunk.js",
-    "main.js.map": "/Solving_The_Syndrome/static/js/main.cf6e6cb6.chunk.js.map",
+    "main.js": "/Solving_The_Syndrome/static/js/main.c1766644.chunk.js",
+    "main.js.map": "/Solving_The_Syndrome/static/js/main.c1766644.chunk.js.map",
     "runtime-main.js": "/Solving_The_Syndrome/static/js/runtime-main.fd2bff9e.js",
     "runtime-main.js.map": "/Solving_The_Syndrome/static/js/runtime-main.fd2bff9e.js.map",
     "static/js/2.bda7f64c.chunk.js": "/Solving_The_Syndrome/static/js/2.bda7f64c.chunk.js",
@@ -37,6 +37,6 @@
     "static/js/runtime-main.fd2bff9e.js",
     "static/js/2.bda7f64c.chunk.js",
     "static/css/main.b18ae138.chunk.css",
-    "static/js/main.cf6e6cb6.chunk.js"
+    "static/js/main.c1766644.chunk.js"
   ]
 }
