@@ -80,8 +80,8 @@ function Navbar() {
 
   if (toggle) {
     return (
-      <div className="flex flex-col items-center">
-        <div className="flex justify-between items-center bg-gray-900 h-16 rounded-b-3xl px-8 py-4 md:w-700">
+      <div className="flex items-center justify-center pb-8">
+        <div className="fixed top-0 flex justify-between items-center bg-gray-900 h-16 rounded-b-3xl px-8 py-4 md:w-700">
           {/* Left */}
           <button onClick={setNavbarstatus} className="w-8 h-8 text-center">
             <img src={logo} alt="Logo"></img>
