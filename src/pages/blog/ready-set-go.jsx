@@ -20,11 +20,13 @@ const ReadySetGo = () => {
   return (
     <section className="flex flex-col items-center font-base leading-6 md:leading-8 text-base md:text-lg mt-20">
       <div className="w-full md:w-700 space-y-4 px-8">
-        <h1 id="top" className="self-center text-xl md:text-5xl font-bold">
+        {/* Title */}
+        <h1 id="top" className="self-center text-2xl md:text-5xl font-bold">
           Ready Set Go
         </h1>
         <p className="italic text-red-400">June 8th, 2022</p>
         <div className="border-b border-red-400"></div>
+        {/* Headline */}
         <p className="md:text-xl leading-9 mt-12 italic">
           So, you've dabbled with{" "}
           <span>
@@ -42,7 +44,7 @@ const ReadySetGo = () => {
         </p>
         <div className="block border-b border-red-400"></div>
         {/* Table of Contents */}
-        <h2 className="text-2xl md:text-3xl font-semibold pt-4 pb-2">
+        <h2 className="text-xl md:text-3xl font-semibold pt-4 pb-2">
           Table of Contents
         </h2>
         <ol className="list-decimal pt-2 pb-4 pl-8 space-y-2 md:text-xl font-medium">
@@ -142,11 +144,11 @@ const ReadySetGo = () => {
         </div>
         <p>
           You need a place to store your code and GitHub is pretty much the
-          defacto code repo on the web. Let's sign up at{""}
+          defacto code repository on the web. Let's sign up at{""}
           <span className="px-1 text-red-400 hover:text-red-300">
             <a href="https://github.com/signup">GitHub Signup</a>
           </span>
-          and follow the prompts to set up an account.
+          and follow the steps to set up an account.
         </p>
         {/* Create a GitHub Repository */}
         <div className="flex items-center justify-start">
@@ -183,7 +185,7 @@ const ReadySetGo = () => {
           button. Clicking it will present a dropdown menu with a "copy to
           clipboard" button for your repository's GitHub URL.
         </p>
-        <pre className="pt-24 text-lg prettyprint text-red-400 bg-gray-700 leading-10 rounded-2xl overflow-auto mr-auto">
+        <pre className="pt-24 text-xs md:text-lg prettyprint text-red-400 bg-gray-700 leading-10 rounded-2xl overflow-auto mr-auto">
           {`
     ## Create and access a directory for your app
     mkdir my_app
@@ -215,7 +217,7 @@ const ReadySetGo = () => {
           your code to GitHub. See below for example code you can use to stage,
           commit, and push your changes to GitHub.
         </p>
-        <pre className="text-lg prettyprint text-red-400 bg-gray-700 leading-10 rounded-2xl overflow-auto mr-auto">
+        <pre className="text-xs md:text-lg prettyprint text-red-400 bg-gray-700 leading-10 rounded-2xl overflow-auto mr-auto">
           {`
   # Stage all of your changes
   git add --all
@@ -240,7 +242,7 @@ const ReadySetGo = () => {
           time which makes for happier users. So run that build and get ready to
           deploy your app.
         </p>
-        <pre className="text-lg prettyprint text-red-400 bg-gray-700 leading-10 rounded-2xl overflow-auto mr-auto">
+        <pre className="text-xs md:text-lg prettyprint text-red-400 bg-gray-700 leading-10 rounded-2xl overflow-auto mr-auto">
           {`
   # Create your product build
   npm run build
@@ -280,9 +282,11 @@ const ReadySetGo = () => {
         </div>
         <p>
           From here on out, to deploy your changes to GitHub Pages, just follow
-          the previous steps (i.e., stage, commit, push, build). In addition, if
-          you'd like to publish updates to your GitHub Pages page from the
-          comfort of your terminal, install the NPM package called
+          the previous steps (i.e., stage, commit, push, build).
+        </p>
+        <p>
+          Furthermore, if you'd like to publish updates to your GitHub Pages
+          page from the comfort of your terminal, install the NPM package called
           <span className="px-1 text-red-400 hover:text-red-300">
             <a href="https://www.npmjs.com/package/gh-pages#command-line-utility">
               gh-pages
@@ -291,11 +295,12 @@ const ReadySetGo = () => {
           and set up a package "deploy" script to push your code to your GitHub
           Pages page.
         </p>
-        <pre className="text-lg prettyprint text-red-400 bg-gray-700 leading-10 rounded-2xl overflow-auto mr-auto">
+        <pre className="text-xs md:text-lg prettyprint text-red-400 bg-gray-700 leading-10 rounded-2xl overflow-auto mr-auto">
           {`
-  # Deploy your build to gh-pages
-  npm run deploy
-  😎`}
+      # Deploy your build to gh-pages
+      npm run deploy
+      😎
+          `}
         </pre>
       </div>
       <Footer></Footer>
