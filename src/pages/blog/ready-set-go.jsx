@@ -238,7 +238,7 @@ const ReadySetGo = () => {
         </div>
         <p>
           The production build is an web optimized version of our app. This is
-          the version we'll post to GitHub pages. Production builds improve load
+          the version we'll post to GitHub Pages. Production builds improve load
           time which makes for happier users. So run that build and get ready to
           deploy your app.
         </p>
@@ -258,14 +258,14 @@ const ReadySetGo = () => {
           </h2>
         </div>
         <p>
-          For a more in-depth understanding of GitHub pages,{" "}
+          For a more in-depth understanding of GitHub Pages,{" "}
           <span className="px-1 text-red-400 hover:text-red-300">
             <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site">
               please read the documentation,
             </a>
           </span>
           but if you're looking for the TL;DR, then you should know that
-          deploying your application from a GitHub repository to GitHub pages
+          deploying your application from a GitHub repository to GitHub Pages
           is, as you should expect, very easy. Simply go to "Settings" and
           "Pages" page, select "Deploy from a branch" as your "Source" and pick
           a branch from the "Branch" dropdown which will be used to build your
