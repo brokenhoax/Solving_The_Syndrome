@@ -18,7 +18,7 @@ const ReadySetGo = () => {
   }, []);
 
   return (
-    <section className="flex flex-col items-center font-base leading-6 md:leading-8 text-base md:text-lg mt-20">
+    <section className="flex flex-col items-center font-base leading-7 md:leading-8 text-base md:text-lg mt-20">
       <div className="w-full md:w-700 space-y-4 px-8">
         {/* Title */}
         <h1 id="top" className="self-center text-2xl md:text-5xl font-bold">
@@ -27,8 +27,8 @@ const ReadySetGo = () => {
         <p className="italic text-red-400">June 8th, 2022</p>
         <div className="border-b border-red-400"></div>
         {/* Headline */}
-        <p className="md:text-xl leading-9 mt-12 italic">
-          So, you've dabbled with{" "}
+        <p className="md:text-xl leading-7 md:leading-8 mt-12 italic">
+          So, you've dabbled with
           <span>
             <a
               href="https://create-react-app.dev/docs/getting-started"
@@ -36,7 +36,7 @@ const ReadySetGo = () => {
             >
               create-react-app
             </a>
-          </span>{" "}
+          </span>
           and you're ready to build and share something amazing with the world.
           Now what? This post will walk you through creating a GitHub repository
           to manage and back up your app as well as using GitHub Pages to
@@ -185,7 +185,7 @@ const ReadySetGo = () => {
           button. Clicking it will present a dropdown menu with a "copy to
           clipboard" button for your repository's GitHub URL.
         </p>
-        <pre className="pt-24 text-xs md:text-lg prettyprint text-red-400 bg-gray-700 leading-10 rounded-2xl overflow-auto mr-auto">
+        <pre className="pt-24 text-xs md:text-lg prettyprint text-red-400 bg-gray-700 leading-8 rounded-2xl overflow-auto mr-auto">
           {`
     ## Create and access a directory for your app
     mkdir my_app
@@ -217,7 +217,7 @@ const ReadySetGo = () => {
           your code to GitHub. See below for example code you can use to stage,
           commit, and push your changes to GitHub.
         </p>
-        <pre className="text-xs md:text-lg prettyprint text-red-400 bg-gray-700 leading-10 rounded-2xl overflow-auto mr-auto">
+        <pre className="text-xs md:text-lg prettyprint text-red-400 bg-gray-700 leading-8 rounded-2xl overflow-auto mr-auto">
           {`
   # Stage all of your changes
   git add --all
@@ -242,7 +242,7 @@ const ReadySetGo = () => {
           time which makes for happier users. So run that build and get ready to
           deploy your app.
         </p>
-        <pre className="text-xs md:text-lg prettyprint text-red-400 bg-gray-700 leading-10 rounded-2xl overflow-auto mr-auto">
+        <pre className="text-xs md:text-lg prettyprint text-red-400 bg-gray-700 leading-8 rounded-2xl overflow-auto mr-auto">
           {`
   # Create your product build
   npm run build
@@ -295,7 +295,7 @@ const ReadySetGo = () => {
           and set up a package "deploy" script to push your code to your GitHub
           Pages page.
         </p>
-        <pre className="text-xs md:text-lg prettyprint text-red-400 bg-gray-700 leading-10 rounded-2xl overflow-auto mr-auto">
+        <pre className="text-xs md:text-lg prettyprint text-red-400 bg-gray-700 leading-8 rounded-2xl overflow-auto mr-auto">
           {`
       # Deploy your build to gh-pages
       npm run deploy
