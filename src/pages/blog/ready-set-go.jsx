@@ -39,15 +39,15 @@ const ReadySetGo = () => {
           </span>
           and you're ready to build and share something amazing with the world.
           Now what? This post will walk you through creating a GitHub repository
-          to manage and back up your app as well as using GitHub Pages to
-          publish your app to the web.
+          to manage and back up your application as well as using GitHub Pages
+          to publish your app to the web.
         </p>
         <div className="block border-b border-red-400"></div>
         {/* Table of Contents */}
-        <h2 className="text-xl md:text-3xl font-semibold pt-4 pb-2">
+        <h2 className="text-xl md:text-3xl font-semibold pt-2">
           Table of Contents
         </h2>
-        <ol className="list-decimal pt-2 pb-4 pl-8 space-y-2 md:text-xl font-medium">
+        <ol className="list-decimal pb-2 pl-8 space-y-2 md:text-xl font-medium">
           <li>
             <HashLink
               className="text-red-400 hover:text-red-300"
@@ -144,7 +144,9 @@ const ReadySetGo = () => {
         </div>
         <p>
           You need a place to store your code and GitHub is pretty much the
-          defacto code repository on the web. Let's sign up at{""}
+          defacto code repository on the web. You'll use the git version control
+          system to manage your code repositories—repositories which you'll
+          store in GitHub. Let's sign up at{""}
           <span className="px-1 text-red-400 hover:text-red-300">
             <a href="https://github.com/signup">GitHub Signup</a>
           </span>
@@ -160,8 +162,9 @@ const ReadySetGo = () => {
           </h2>
         </div>
         <p>
-          There should be a green button on your GitHub homepage labeled "New".
-          Click it to create a new repository or
+          Let's create our first GitHub repository! There should be a green
+          button on your GitHub homepage labeled "New". Click it to create a new
+          repository or
           <span className="px-1 text-red-400 hover:text-red-300">
             <a href="https://github.com/new">click here</a>
           </span>
@@ -180,10 +183,19 @@ const ReadySetGo = () => {
         <p>
           You'll want to save your app to your computer and sync it to GitHub.
           So, we'll create a folder for our app and we'll clone our GitHub
-          repository to the same folder. To clone your repository, go to your
-          repository on GitHub and, on the "Code" page there's a green "Code"
-          button. Clicking it will present a dropdown menu with a "copy to
-          clipboard" button for your repository's GitHub URL.
+          repository to the same folder.
+        </p>
+        <p>
+          To clone your repository, go to your repository on GitHub and, on the
+          "Code" page there's a green "Code" button. Clicking it will present a
+          dropdown menu with a "copy to clipboard" button for your repository's
+          GitHub URL. We'll use this URL, along with the "git clone" command, to
+          clone our repository locally so we can develop our changes locally
+          using all of the wonderful capabilities provided by a version control
+          system known as git. To learn more about git, check out their{" "}
+          <span className="px-1 text-red-400 hover:text-red-300">
+            <a href="https://git-scm.com/">documentation.</a>
+          </span>
         </p>
         <pre className="pt-24 text-xs md:text-lg prettyprint text-red-400 bg-gray-700 leading-8 rounded-2xl overflow-auto mr-auto">
           {`
@@ -282,18 +294,16 @@ const ReadySetGo = () => {
         </div>
         <p>
           From here on out, to deploy your changes to GitHub Pages, just follow
-          the previous steps (i.e., stage, commit, push, build).
-        </p>
-        <p>
-          Furthermore, if you'd like to publish updates to your GitHub Pages
-          page from the comfort of your terminal, install the NPM package called
+          the previous steps (i.e., stage, commit, push, build) and if you'd
+          like to publish updates to your GitHub Pages page from the comfort of
+          your terminal, just install the NPM package called
           <span className="px-1 text-red-400 hover:text-red-300">
             <a href="https://www.npmjs.com/package/gh-pages#command-line-utility">
               gh-pages
             </a>
           </span>
-          and set up a package "deploy" script to push your code to your GitHub
-          Pages page.
+          and set up a package.json "deploy" script to push your code to your
+          GitHub Pages page as is illustrated below. Godspeed!
         </p>
         <pre className="text-xs md:text-lg prettyprint text-red-400 bg-gray-700 leading-8 rounded-2xl overflow-auto mr-auto">
           {`

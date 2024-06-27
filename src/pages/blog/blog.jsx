@@ -51,7 +51,7 @@ const Blog = () => {
       },
       icon: "fas fa-mug-hot",
       mugs: 2,
-      tagline: "You gotta start somewhere.",
+      tagline: "Publish your app to the web with GitHub Pages.",
       path: "/blog/ready-set-go",
     },
   ];
@@ -65,15 +65,19 @@ const Blog = () => {
   }, []);
 
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <section id="blog" className="flex justify-center items-center mt-20">
       <div className="container flex flex-col px-8">
         {/* Author Data */}
         <div className="flex items-center justify-start pb-6">
-          <img src={headshot} className="rounded-full h-16 w-16" alt="Logo"></img>
+          <img
+            src={headshot}
+            className="rounded-full h-16 w-16"
+            alt="Logo"
+          ></img>
           <div className="ml-4 font-semibold text-base">
             <div>Andrew Kraus</div>
             <div className="pb-0.5 text-red-400">@brokenhoax</div>
@@ -98,9 +102,7 @@ const Blog = () => {
                     <p>{post.length.minutes} mins</p>
                   </div>
                 </div>
-                <div className="text-sm font-semibold">
-                  {post.date}
-                </div>
+                <div className="text-sm font-semibold">{post.date}</div>
               </Link>
               <hr className="mt-8 border-b border-gray-800"></hr>
             </li>

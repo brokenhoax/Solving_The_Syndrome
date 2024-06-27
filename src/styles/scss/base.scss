@@ -97,7 +97,7 @@ pre.prettyprint {
 // Styled scrollbars
 .styled-scrollbars {
   /* Foreground, Background */
-  scrollbar-color: $thm-dark-blue $thm-orange;
+  scrollbar-color: $thm-orange $thm-dark-blue;
 }
 .styled-scrollbars::-webkit-scrollbar {
   width: 10px; /* Mostly for vertical scrollbars */
@@ -105,11 +105,11 @@ pre.prettyprint {
 }
 .styled-scrollbars::-webkit-scrollbar-thumb {
   /* Foreground */
-  background: #df817c;
+  background: $thm-dark-blue;
 }
 .styled-scrollbars::-webkit-scrollbar-track {
   /* Background */
-  background: #242c3a;
+  background: $thm-orange;
 }
 
 // Toggle
