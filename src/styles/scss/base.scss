@@ -2,13 +2,13 @@
 
 html body {
   background-color: #efefef;
-  color: #242c3a;
+  color: #1a202c;
   overflow-y: scroll;
 }
 
 @media (prefers-color-scheme: dark) {
   html body {
-    background-color: #242c3a;
+    background-color: #1a202c;
     color: #efefef;
   }
 }
@@ -103,13 +103,14 @@ pre.prettyprint {
   width: 10px; /* Mostly for vertical scrollbars */
   height: 10px; /* Mostly for horizontal scrollbars */
 }
-.styled-scrollbars::-webkit-scrollbar-thumb { /* Foreground */
+.styled-scrollbars::-webkit-scrollbar-thumb {
+  /* Foreground */
   background: #df817c;
 }
-.styled-scrollbars::-webkit-scrollbar-track { /* Background */
+.styled-scrollbars::-webkit-scrollbar-track {
+  /* Background */
   background: #242c3a;
 }
-
 
 // Toggle
 .toggle-btn {
@@ -146,18 +147,18 @@ pre.prettyprint {
 }
 
 .toggle-btn.toggled .thumb {
-  left: calc(50px - 26px)
+  left: calc(50px - 26px);
 }
 
 // Dark Mode
 .dark-mode {
-  background-color:#1a202c;
+  background-color: #1a202c;
   color: #edf2f7;
 }
 
 .light-mode {
   background-color: #edf2f7;
-  color: #2d3748;
+  color: #1a202c;
 }
 
 .border-b {
