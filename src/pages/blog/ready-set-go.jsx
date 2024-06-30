@@ -18,8 +18,8 @@ const ReadySetGo = () => {
   }, []);
 
   return (
-    <section className="flex flex-col items-center font-base leading-7 md:leading-8 text-base md:text-lg mt-20">
-      <div className="w-full md:w-700 space-y-4 px-8">
+    <section className="flex flex-col items-center font-base leading-7 md:leading-8 text-base md:text-lg pt-32">
+      <div className="w-full md:w-700 space-y-4 px-8 pb-16">
         {/* Title */}
         <h1 id="top" className="self-center text-2xl md:text-5xl font-bold">
           Ready Set Go
@@ -54,7 +54,7 @@ const ReadySetGo = () => {
               scroll={(el) =>
                 el.scrollIntoView({ behavior: "smooth", block: "center" })
               }
-              to="/blog/ready-set-go#register"
+              to="/Solving_The_Syndrome/blog/ready-set-go#register"
             >
               Create a GitHub Account
             </HashLink>
@@ -65,7 +65,7 @@ const ReadySetGo = () => {
               scroll={(el) =>
                 el.scrollIntoView({ behavior: "smooth", block: "center" })
               }
-              to="/blog/ready-set-go#create"
+              to="/Solving_The_Syndrome/blog/ready-set-go#create"
             >
               Create a GitHub Repository
             </HashLink>
@@ -76,7 +76,7 @@ const ReadySetGo = () => {
               scroll={(el) =>
                 el.scrollIntoView({ behavior: "smooth", block: "center" })
               }
-              to="/blog/ready-set-go#clone"
+              to="/Solving_The_Syndrome/blog/ready-set-go#clone"
             >
               Clone Your GitHub Repository
             </HashLink>
@@ -87,7 +87,7 @@ const ReadySetGo = () => {
               scroll={(el) =>
                 el.scrollIntoView({ behavior: "smooth", block: "center" })
               }
-              to="/blog/ready-set-go#push"
+              to="/Solving_The_Syndrome/blog/ready-set-go#push"
             >
               Push Your Code to GitHub
             </HashLink>
@@ -98,7 +98,7 @@ const ReadySetGo = () => {
               scroll={(el) =>
                 el.scrollIntoView({ behavior: "smooth", block: "center" })
               }
-              to="/blog/ready-set-go#build"
+              to="/Solving_The_Syndrome/blog/ready-set-go#build"
             >
               Create a Production Build
             </HashLink>
@@ -110,7 +110,7 @@ const ReadySetGo = () => {
               scroll={(el) =>
                 el.scrollIntoView({ behavior: "smooth", block: "center" })
               }
-              to="/blog/ready-set-go#publish"
+              to="/Solving_The_Syndrome/blog/ready-set-go#publish"
             >
               Publish Your App to GitHub Pages
             </HashLink>
@@ -122,7 +122,7 @@ const ReadySetGo = () => {
               scroll={(el) =>
                 el.scrollIntoView({ behavior: "smooth", block: "center" })
               }
-              to="/blog/ready-set-go#deploy"
+              to="/Solving_The_Syndrome/blog/ready-set-go#deploy"
             >
               Deploy Your Build to GitHub Pages
             </HashLink>

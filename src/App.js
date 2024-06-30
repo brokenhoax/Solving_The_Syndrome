@@ -20,66 +20,66 @@ function App() {
   return (
     <Router>
       <div className="relative h-screen">
-        <Navbar/>
-          <Switch>
-            <Route path="/" exact={true} component={Blog} />
-            <Route path="/Solving_The_Syndrome" exact={true} component={Blog} />
-            <Route
-              path="/home"
-              exact={true}
-              className="home"
-              component={Home}
-            />
-            {/* <Route
+        <Navbar />
+        <Switch>
+          <Route path="/" exact={true} component={Blog} />
+          <Route path="/Solving_The_Syndrome" exact={true} component={Blog} />
+          <Route
+            path="/Solving_The_Syndrome/home"
+            exact={true}
+            className="home"
+            component={Home}
+          />
+          {/* <Route
               path="/login"
               exact={true}
               className="login"
               component={Login}
             /> */}
-            <Route
-              path="/blog"
-              exact={true}
-              className="blog"
-              component={Blog}
-            />
-            <Route
-              path="/blog/figma-slider"
-              exact={true}
-              className="figma-slider"
-              component={FigmaSlider}
-            />
-            <Route
-              path="/blog/react-components"
-              exact={true}
-              className="react-components"
-              component={ReactComponents}
-            />
-            <Route
-              path="/blog/dark-mode"
-              exact={true}
-              className="dark-mode"
-              component={DarkMode}
-            />
-            <Route
-              path="/blog/i-know-kung-fu"
-              exact={true}
-              className="i-know-kung-fu"
-              component={IKnowKungFoo}
-            />
-            <Route
-              path="/blog/ready-set-go"
-              exact={true}
-              className="ready-set-go"
-              component={ReadySetGo}
-            />
-            <Route
-              path="/about"
-              exact={true}
-              className="about"
-              component={About}
-            />
-            <Redirect from="*" to="/404" />
-          </Switch>
+          <Route
+            path="/Solving_The_Syndrome/blog"
+            exact={true}
+            className="blog"
+            component={Blog}
+          />
+          <Route
+            path="/Solving_The_Syndrome/blog/figma-slider"
+            exact={true}
+            className="figma-slider"
+            component={FigmaSlider}
+          />
+          <Route
+            path="/Solving_The_Syndrome/blog/react-components"
+            exact={true}
+            className="react-components"
+            component={ReactComponents}
+          />
+          <Route
+            path="/Solving_The_Syndrome/blog/dark-mode"
+            exact={true}
+            className="dark-mode"
+            component={DarkMode}
+          />
+          <Route
+            path="/Solving_The_Syndrome/blog/i-know-kung-fu"
+            exact={true}
+            className="i-know-kung-fu"
+            component={IKnowKungFoo}
+          />
+          <Route
+            path="/Solving_The_Syndrome/blog/ready-set-go"
+            exact={true}
+            className="ready-set-go"
+            component={ReadySetGo}
+          />
+          <Route
+            path="/Solving_The_Syndrome/about"
+            exact={true}
+            className="about"
+            component={About}
+          />
+          <Redirect from="*" to="/404" />
+        </Switch>
       </div>
     </Router>
   );

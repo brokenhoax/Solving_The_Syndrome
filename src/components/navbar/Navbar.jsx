@@ -11,11 +11,11 @@ function Navbar() {
   const navLinks = [
     {
       title: "Home",
-      path: "/blog",
+      path: "/Solving_The_Syndrome/blog",
     },
     {
       title: "About",
-      path: "/about",
+      path: "/Solving_The_Syndrome/about",
     },
     // {
     //   title: "Login",
@@ -37,7 +37,7 @@ function Navbar() {
 
   if (!toggle) {
     return (
-      <div className="flex items-center justify-center pb-8">
+      <div className="flex items-center justify-center">
         <div className="fixed top-0 flex justify-between items-center bg-gray-900 h-16 rounded-b-3xl px-8 py-4 md:w-700 border -mt-1 border-red-400">
           {/* Left */}
           <div className="flex items-center">

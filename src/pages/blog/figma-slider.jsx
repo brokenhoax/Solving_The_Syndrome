@@ -13,16 +13,16 @@ import Image from "../../components/common/image";
 
 const FigmaSlider = () => {
   return (
-    <section className="flex flex-col items-center leading-8 md:leading-10 text-base md:text-lg mt-20">
-      <div className="w-full md:w-700 px-8 space-y-8">
+    <section className="flex flex-col items-center leading-6 md:leading-8 text-base md:text-lg pt-32">
+      <div className="w-full md:w-700 px-8 pb-16 space-y-8">
         {/* Title */}
         <div className="space-y-4">
           <h1 className="self-center text-3xl md:text-5xl font-bold" id="title">
             Figma Slider
           </h1>
           <div className="italic text-red-400">June 8th, 2022</div>
-          <div className="block border-b border-gray-700"></div>
-          <p className="text-base md:text-xl leading-8 md:leading-10 mt-12 font-normal italic">
+          <div className="border-b border-red-400"></div>
+          <p className="text-base md:text-xl mt-12 font-normal italic">
             I'm working on a mockup for a new feature at work and I've been
             asked to include a slider that allows a user to change "synonym
             sensitivity" on a scale from zero to one. I figured building a
@@ -31,45 +31,74 @@ const FigmaSlider = () => {
             components/variants, constraints, interactions, and basic styling.
             Let's jump in!
           </p>
+          {/* Slider Image */}
+          <Image image={prototype} message="Figma slider"></Image>
         </div>
-        {/* Slider Image */}
-        <Image image={prototype} message="Figma slider"></Image>
-        <hr></hr>
         {/* Table of Contents */}
         <div>
-          <h2
-            id="toc"
-            className="text-2xl md:text-3xl font-semibold pb-2 text-gray-500"
-          >
+          <div className="border-b border-red-400"></div>
+          <h2 id="toc" className="text-xl md:text-3xl font-semibold pt-6 pb-4">
             Table of Contents
           </h2>
-          <ol className="list-decimal pl-8 font-medium space-y-2 text-xl  text-gray-600">
+          <ol className="list-decimal pb-6 pl-8 space-y-2 md:text-xl font-medium">
             <li>
-              <HashLink to="/blog/figma-slider#components-and-variants">
+              <HashLink
+                className="text-red-400 hover:text-red-300"
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "center" })
+                }
+                to="/Solving_The_Syndrome/blog/figma-slider#components-and-variants"
+              >
                 Components and Variants
               </HashLink>
             </li>
             <li>
-              <HashLink to="/blog/figma-slider#slider-handle">
+              <HashLink
+                className="text-red-400 hover:text-red-300"
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "center" })
+                }
+                to="/Solving_The_Syndrome/blog/figma-slider#slider-handle"
+              >
                 Slider Handle
               </HashLink>
             </li>
             <li>
-              <HashLink to="/blog/figma-slider#slider-bar">Slider Bar</HashLink>
+              <HashLink
+                className="text-red-400 hover:text-red-300"
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "center" })
+                }
+                to="/Solving_The_Syndrome/blog/figma-slider#slider-bar"
+              >
+                Slider Bar
+              </HashLink>
             </li>
             <li>
-              <HashLink to="/blog/figma-slider#interactions">
+              <HashLink
+                className="text-red-400 hover:text-red-300"
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "center" })
+                }
+                to="/Solving_The_Syndrome/blog/figma-slider#interactions"
+              >
                 Interactions
               </HashLink>
             </li>
             <li>
-              <HashLink to="/blog/figma-slider#constraints">
+              <HashLink
+                className="text-red-400 hover:text-red-300"
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "center" })
+                }
+                to="/Solving_The_Syndrome/blog/figma-slider#constraints"
+              >
                 Constraints
               </HashLink>
             </li>
           </ol>
+          <div className="border-b border-red-400"></div>
         </div>
-        <hr></hr>
         {/* Components and Variants */}
         <div className="space-y-4">
           <h2
@@ -79,7 +108,14 @@ const FigmaSlider = () => {
             Components and Variants{" "}
             <span className="text-2xl md:text-3xl text-red-400 pl-1">
               {" "}
-              <HashLink to="/blog/figma-slider#title">#</HashLink>
+              <HashLink
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "center" })
+                }
+                to="/Solving_The_Syndrome/blog/figma-slider#title"
+              >
+                #
+              </HashLink>
             </span>
           </h2>
           <p>
@@ -111,7 +147,12 @@ const FigmaSlider = () => {
             Slider Handle{" "}
             <span className="text-2xl md:text-3xl text-red-400 pl-1">
               {" "}
-              <HashLink to="/blog/figma-slider#title">#</HashLink>
+              <HashLink
+                smooth
+                to="/Solving_The_Syndrome/blog/figma-slider#title"
+              >
+                #
+              </HashLink>
             </span>
           </h2>
           <p>
@@ -138,7 +179,12 @@ const FigmaSlider = () => {
             Slider Bar{" "}
             <span className="text-2xl md:text-3xl text-red-400 pl-1">
               {" "}
-              <HashLink to="/blog/figma-slider#title">#</HashLink>
+              <HashLink
+                smooth
+                to="/Solving_The_Syndrome/blog/figma-slider#title"
+              >
+                #
+              </HashLink>
             </span>
           </h2>
           <Image image={slider_bar} message="Figma slider bar"></Image>
@@ -186,7 +232,12 @@ const FigmaSlider = () => {
             Interactions{" "}
             <span className="text-2xl md:text-3xl text-red-400 pl-1">
               {" "}
-              <HashLink to="/blog/figma-slider#title">#</HashLink>
+              <HashLink
+                smooth
+                to="/Solving_The_Syndrome/blog/figma-slider#title"
+              >
+                #
+              </HashLink>
             </span>
           </h2>
           <Image
@@ -232,7 +283,12 @@ const FigmaSlider = () => {
             Constraints{" "}
             <span className="text-2xl md:text-3xl text-red-400 pl-1">
               {" "}
-              <HashLink to="/blog/figma-slider#title">#</HashLink>
+              <HashLink
+                smooth
+                to="/Solving_The_Syndrome/blog/figma-slider#title"
+              >
+                #
+              </HashLink>
             </span>
           </h2>
           <p>

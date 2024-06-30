@@ -16,7 +16,7 @@ const Blog = () => {
       icon: "fas fa-mug-hot",
       mugs: 1,
       tagline: "Dark mode is stupid easy.",
-      path: "/blog/dark-mode",
+      path: "/Solving_The_Syndrome/blog/dark-mode",
     },
     {
       title: "React Components",
@@ -28,7 +28,7 @@ const Blog = () => {
       icon: "fas fa-mug-hot",
       mugs: 1,
       tagline: "DRY your code with React components.",
-      path: "/blog/react-components",
+      path: "/Solving_The_Syndrome/blog/react-components",
     },
     {
       title: "Figma Slider",
@@ -40,7 +40,7 @@ const Blog = () => {
       icon: "fas fa-mug-hot",
       mugs: 3,
       tagline: "Create a slider in Figma.",
-      path: "/blog/figma-slider",
+      path: "/Solving_The_Syndrome/blog/figma-slider",
     },
     {
       title: "Ready Set Go",
@@ -52,7 +52,7 @@ const Blog = () => {
       icon: "fas fa-mug-hot",
       mugs: 2,
       tagline: "Publish your app to the web with GitHub Pages.",
-      path: "/blog/ready-set-go",
+      path: "/Solving_The_Syndrome/blog/ready-set-go",
     },
   ];
 
