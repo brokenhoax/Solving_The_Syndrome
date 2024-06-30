@@ -22,11 +22,16 @@ const About = () => {
             My name is Andrew Kraus and I enjoy all things tech and design. I
             have learned most of what I know on those subjects from strangers on
             the internet and mostly for free. To return the favor, I've built
-            this dark and cozy corner of the web. CozyCampus is meant to be
-            educational, is designed for readers, and its content will include
-            subjects such as web development, web design, user experience,
-            cybescurity, networking, linux, and more. So, grab a cup of coffee
-            and get comfy! <i className="fas fa-mug-hot text-gray-700"></i>
+            this dark and cozy corner of the web.
+          </p>
+          <p>
+            CozyCampus is meant to be educational, is designed for readers, and
+            its content will include subjects such as web development, web
+            design, user experience, cybescurity, networking, linux, and more.
+          </p>
+          <p>
+            So, grab a cup of coffee and get comfy!{" "}
+            <i className="fas fa-mug-hot text-gray-700"></i>
           </p>
           <div className="block border-b border-red-400"></div>
           <h2 className="text-2xl font-bold pt-4">About the Writer</h2>
@@ -37,11 +42,13 @@ const About = () => {
             a network architect, a manufacturer representative, and, most
             recently, a software engineer. My employers have been some of the
             largest and most storied in the business (IBM) to some of the
-            smaller/more niche players vying to make their mark (Convr). Like my
-            experience, my skills are diverse, but the common threads throughout
-            are my desire to problem solve, the satisfaction I get from helping
-            others, and, of course, my love of technology. Thanks for stopping
-            by!
+            smaller/more niche players vying to make their mark (Convr).
+          </p>
+          <p>
+            Like my experience, my skills are diverse, but the common threads
+            throughout are my desire to problem solve, the satisfaction I get
+            from helping others, and, of course, my love of technology. Thanks
+            for stopping by!
           </p>
           {/* Contact Details */}
           <div className="flex items-center space-x-4 pt-4 pb-8">
