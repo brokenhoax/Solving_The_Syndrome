@@ -69,7 +69,7 @@ const Blog = () => {
   }, []);
 
   return (
-    <section id="blog" className="flex justify-center items-center mt-20">
+    <section id="blog" className="flex justify-center items-center mt-32">
       <div className="container flex flex-col px-8">
         {/* Author Data */}
         <div className="flex items-center justify-start pb-6">
