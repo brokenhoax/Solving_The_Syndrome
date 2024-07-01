@@ -6,6 +6,7 @@ import DarkMode from "./pages/blog/dark-mode";
 import IKnowKungFoo from "./pages/blog/i-know-kung-fu";
 import FigmaSlider from "./pages/blog/figma-slider";
 import ReactComponents from "./pages/blog/react-components";
+import React, { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,9 +18,29 @@ import "./styles/app.css";
 import ReadySetGo from "./pages/blog/ready-set-go";
 
 function App() {
+  useEffect(() => {
+    // Added to manually test...
+    localStorage.setItem("theme", "dark");
+    console.log("Howdy!");
+    // If the user has selected a theme, use that
+    const selectedTheme = localStorage.getItem("theme");
+
+    if (selectedTheme) {
+      document.body.classList.remove("light");
+      document.body.classList.remove("dark");
+      document.body.classList.add(selectedTheme);
+      // Else, if the user's OS preference is Dark Mode...
+    } else if (window.matchMedia("(prefers-color-scheme: dark)")) {
+      document.body.classList.remove("light");
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+      document.body.classList.add("light");
+    }
+  }, []);
   return (
     <Router>
-      <div className="relative h-screen">
+      <div className="relative h-full bg-background text-copy-primary">
         <Navbar />
         <Switch>
           <Route path="/" exact={true} component={Blog} />
@@ -57,7 +78,7 @@ function App() {
           <Route
             path="/Solving_The_Syndrome/blog/dark-mode"
             exact={true}
-            className="dark-mode"
+            className="dark-mode-blog"
             component={DarkMode}
           />
           <Route

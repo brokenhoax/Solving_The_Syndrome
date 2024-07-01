@@ -18,7 +18,7 @@ const ReadySetGo = () => {
   }, []);
 
   return (
-    <section className="flex flex-col items-center font-base leading-7 md:leading-8 text-base md:text-lg pt-32">
+    <section className="flex flex-col items-center font-base leading-7 md:leading-8 text-base md:text-lg pt-32 min-h-screen">
       <div className="w-full md:w-700 space-y-4 px-8 pb-16">
         {/* Title */}
         <h1 id="top" className="self-center text-2xl md:text-5xl font-bold">

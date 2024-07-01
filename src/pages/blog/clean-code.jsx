@@ -5,7 +5,7 @@ import kungfoo from "../../assets/images/kung-foo.jpg";
 
 const CleanCode = () => {
   return (
-    <section className="flex flex-col items-center mt-20">
+    <section className="flex flex-col items-center pt-20 min-h-screen">
       <div className="w-1/3">
         <h1 className="self-center text-5xl font-bold mt-24 mb-2">
           I Know Kung Foo

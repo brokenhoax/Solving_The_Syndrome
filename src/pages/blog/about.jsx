@@ -10,9 +10,9 @@ const About = () => {
   }, []);
 
   return (
-    <section className="flex flex-col items-center justify-between min-h-full">
-      <div className="font-base leading-7 md:leading-8 text-base md:text-lg">
-        <div className="w-full md:w-700 space-y-4 pt-32 px-8">
+    <section className="flex flex-col items-center text-copy-primary min-h-screen">
+      <div className="flex flex-col leading-7 md:leading-8 text-base md:text-lg">
+        <div className="md:w-700 space-y-4 pt-32 px-8">
           <h1 className="text-2xl md:text-5xl font-bold">About</h1>
           <p className="italic text-red-400">June 5th, 2022</p>
           <div className="border-b border-red-400"></div>

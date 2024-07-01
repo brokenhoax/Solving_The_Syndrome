@@ -13,7 +13,7 @@ import Image from "../../components/common/image";
 
 const FigmaSlider = () => {
   return (
-    <section className="flex flex-col items-center leading-6 md:leading-8 text-base md:text-lg pt-32">
+    <section className="flex flex-col items-center leading-6 md:leading-8 text-base md:text-lg pt-32 min-h-screen">
       <div className="w-full md:w-700 px-8 pb-16 space-y-8">
         {/* Title */}
         <div className="space-y-4">

@@ -13,16 +13,12 @@ const IKnowKungFoo = () => {
     document.body.appendChild(script);
   }, []);
   return (
-    <section className="flex flex-col items-center mt-20">
+    <section className="flex flex-col items-center pt-32">
       <div className="w-full md:w-700 px-8">
         <h1 className="self-center text-5xl font-bold mb-2">I Know Kung Foo</h1>
         <h2 className="italic text-red-400">March 5th, 2021</h2>
         <div className="flex flex-col items-center pt-8">
-          <img
-            src={kungfoo}
-            alt="Application"
-            className="rounded-lg"
-          ></img>
+          <img src={kungfoo} alt="Application" className="rounded-lg"></img>
         </div>
         <p className="text-xl my-8 leading-10 mt-12">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eum
