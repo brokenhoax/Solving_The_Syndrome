@@ -8,12 +8,12 @@ const Toggle = () => {
   function handleToggle() {
     setToggled(!toggled);
     if (toggled) {
-      document.body.classList.remove("dark-mode");
-      document.body.classList.add("light-mode");
+      document.body.classList.remove("dark");
+      document.body.classList.add("light");
       console.log("Dark mode DISABLED...");
     } else {
-      document.body.classList.add("dark-mode");
-      document.body.classList.remove("light-mode");
+      document.body.classList.remove("light");
+      document.body.classList.add("dark");
       console.log("Dark mode ENABLED...");
     }
   }
@@ -30,13 +30,13 @@ const Toggle = () => {
     runColorMode((isDarkMode) => {
       if (isDarkMode) {
         console.log("Dark mode enabled...");
-        document.body.classList.add("dark-mode");
-        document.body.classList.remove("light-mode");
+        document.body.classList.remove("light");
+        document.body.classList.add("dark");
         setToggled(true);
       } else {
         console.log("Dark mode disabled...");
-        document.body.classList.remove("dark-mode");
-        document.body.classList.add("light-mode");
+        document.body.classList.remove("dark");
+        document.body.classList.add("light");
         setToggled(false);
       }
     });

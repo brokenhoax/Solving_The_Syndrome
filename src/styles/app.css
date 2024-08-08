@@ -567,6 +567,10 @@ video {
   margin-top: auto;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .-mt-1 {
   margin-top: -0.25rem;
 }
@@ -860,12 +864,12 @@ video {
   padding-left: 2rem;
 }
 
-.pb-8 {
-  padding-bottom: 2rem;
-}
-
 .pt-32 {
   padding-top: 8rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .pb-6 {

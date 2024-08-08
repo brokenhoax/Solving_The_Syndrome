@@ -51,7 +51,7 @@ const Blog = () => {
       },
       icon: "fas fa-mug-hot",
       mugs: 2,
-      tagline: "Publish your app to the web with GitHub Pages.",
+      tagline: "Publish your app with GitHub Pages.",
       path: "/Solving_The_Syndrome/blog/ready-set-go",
     },
   ];
@@ -71,9 +71,9 @@ const Blog = () => {
   return (
     <section
       id="blog"
-      className="flex justify-center items-center min-h-screen"
+      className="flex justify-center items-start min-h-screen pt-32"
     >
-      <div className="container flex flex-col px-8 md:w-700">
+      <div className="flex flex-col px-8 md:w-700">
         {/* Author Data */}
         <div className="flex items-center justify-start pb-6">
           <img

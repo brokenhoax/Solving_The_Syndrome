@@ -115,7 +115,7 @@ pre.prettyprint {
 // Toggle
 .toggle-btn {
   background-color: #fc8181;
-  border: 2px solid #1a202c;
+  border: 2px solid rgba(36, 44, 58, 1);
   border-radius: 99px;
   position: relative;
   border-radius: 2rem;
@@ -139,11 +139,7 @@ pre.prettyprint {
 }
 
 .toggle-btn.toggled {
-  background-color: #2d3748;
-}
-
-.toggle-btn:hover {
-  border-color: #1a202c;
+  background-color: rgba(74, 85, 104);
 }
 
 .toggle-btn.toggled .thumb {
@@ -169,6 +165,35 @@ pre.prettyprint {
   --copy-secondary: rgba(203, 213, 224);
   --accent: rgba(252, 129, 129);
   --background: rgba(36, 44, 58, 1);
+  // Gray
+  --gray-900: rgba(36, 44, 58, 1);
+  --gray-800: rgba(45, 55, 72);
+  --gray-700: rgba(74, 85, 104);
+  --gray-600: rgba(113, 128, 150);
+  --gray-500: rgba(160, 174, 192);
+  --gray-400: rgba(203, 213, 224);
+  --gray-300: rgba(226, 232, 240);
+  --gray-200: rgba(237, 242, 247);
+  --gray-100: rgba(247, 250, 252);
+  // Red
+  --red-900: rgba(116, 42, 42, 1);
+  --red-800: rgba(155, 44, 44, 1);
+  --red-700: rgba(197, 48, 48, 1);
+  --red-600: rgba(229, 62, 62, 1);
+  --red-500: rgba(245, 101, 101, 1);
+  --red-400: rgba(252, 129, 129, 1);
+  --red-300: rgba(254, 178, 178, 1);
+  --red-200: rgba(254, 215, 215, 1);
+  --red-100: rgba(255, 245, 245, 1);
+  // Background
+  background: rgba(var(--background));
+}
+
+.light {
+  --copy-primary: rgba(45, 55, 72);
+  --copy-secondary: rgba(74, 85, 104);
+  --accent: rgba(252, 129, 129);
+  --background: rgba(237, 242, 247);
   // Gray
   --gray-900: rgba(36, 44, 58, 1);
   --gray-800: rgba(45, 55, 72);
